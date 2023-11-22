@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d4b0c14c.css",
+    "main.js": "/portfolio/static/js/main.9b2772b3.js",
+    "static/media/cinema.png": "/portfolio/static/media/cinema.0dbede6dcdcdee547077.png",
+    "static/media/carrent.png": "/portfolio/static/media/carrent.5fe1284241b95b2093ff.png",
+    "static/media/moneyguard.png": "/portfolio/static/media/moneyguard.c463d67a1f8b6a6b2e3f.png",
+    "static/media/minimal.png": "/portfolio/static/media/minimal.4cac971300220b51daf7.png",
+    "static/media/bro.svg": "/portfolio/static/media/bro.3b1e911b5166afdde0251791f1e7c179.svg",
+    "static/media/devGirl.svg": "/portfolio/static/media/devGirl.4ef871cb84d5855331f27abc7c0767bd.svg",
+    "static/media/React.svg": "/portfolio/static/media/React.d5bb10f3e86250eb4624be36ff0b9557.svg",
+    "static/media/Graphic3.svg": "/portfolio/static/media/Graphic3.cb4e177f78e69bc124b72e156dd36d23.svg",
+    "static/media/ReadCvLogo.svg": "/portfolio/static/media/ReadCvLogo.95b8032bc1e212270c3c2ad35e0768be.svg",
+    "static/media/Node.js.svg": "/portfolio/static/media/Node.js.513b0273481aacf02de46fe5a0fa7d40.svg",
+    "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/JavaScript.svg": "/portfolio/static/media/JavaScript.3cf7ad9468736c2ae9a0171c3e7a86e5.svg",
+    "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/portfolio/index.html",
+    "static/media/List.svg": "/portfolio/static/media/List.dd6def255692dd38c7e1005b9f14eed6.svg",
+    "static/media/ArrowLeft.svg": "/portfolio/static/media/ArrowLeft.fad63862af98c9bc1c4dbde0d9af0d6b.svg",
+    "static/media/ArrowRight.svg": "/portfolio/static/media/ArrowRight.86d2cad0374cc902b78f17e34b49fad8.svg",
+    "static/media/icons8-html.svg": "/portfolio/static/media/icons8-html.b98789e6edeff0ce1cb937770ce0c9e4.svg",
+    "static/media/icons8-css3.svg": "/portfolio/static/media/icons8-css3.2091a264f50c6250775a0117a4505b2a.svg",
+    "main.d4b0c14c.css.map": "/portfolio/static/css/main.d4b0c14c.css.map",
+    "main.9b2772b3.js.map": "/portfolio/static/js/main.9b2772b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4b0c14c.css",
+    "static/js/main.9b2772b3.js"
+  ]
+}
