@@ -1,8 +1,8 @@
 {
-  "name": "about_me",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://gostraa.github.io/about_me/",
+  "homepage": "https://gostraa.github.io/portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
