@@ -1,0 +1,54 @@
+@import-normalize; /* bring in normalize.css styles */
+
+:root {
+  --primary-color: #8a42db;
+  --background: #171023;
+  --surface-primary: #2c243b;
+  --surface-secondary: #413a4f;
+  --surface-tertiary: #4e4563;
+  --text-primary: #f5f6f6;
+  --text-secondary: #cdd0d4;
+}
+body {
+  margin: 0;
+  background-color: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
