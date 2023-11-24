@@ -16,43 +16,51 @@ import {
   StyledSecondaryP,
   SvgWrapper,
 } from "./AboutMe.styled";
+import { handleDownloadCV } from "helpers/downloadCV";
 
 const AboutMe = () => {
-  console.log("456");
   return (
-    <StyledAboutSection>
-      <ArrowWrapper>
-        <ArrowSvg />
-      </ArrowWrapper>
+    <>
+      <StyledAboutSection>
+        <ArrowWrapper>
+          <ArrowSvg />
+        </ArrowWrapper>
 
-      <StyledAboutWrapper>
-        <DevGrlSvg width="312" height="276" />
-        <div>
-          <SvgWrapper>
-            <HTMLSvg />
-            <CSSSvg />
-            <JSSvg />
-            <ReactSvg />
-            <NodeSvg />
-          </SvgWrapper>
+        <StyledAboutWrapper>
+          <DevGrlSvg width="312" height="276" />
+          <div>
+            <SvgWrapper>
+              <HTMLSvg />
+              <CSSSvg />
+              <JSSvg />
+              <ReactSvg />
+              <NodeSvg />
+            </SvgWrapper>
 
-          <StyledAboutTitle>About me</StyledAboutTitle>
-          <StyledGeneralP>
-            I am an ambitious front-end developer seeking my first commercial
-            experience.
-          </StyledGeneralP>
-          <StyledSecondaryP>
-            Besides programming, I am a music enthusiast, coffee lover, and
-            self-taught guitarist. I am currently seeking opportunities to apply
-            my skills and enthusiasm to an IT company in Ukraine or Slovakia. I
-            am eager to take on new challenges.
-          </StyledSecondaryP>
-          <Button type="primary" isInHero={false} text="My resume">
-            <CVSvg />
-          </Button>
-        </div>
-      </StyledAboutWrapper>
-    </StyledAboutSection>
+            <StyledAboutTitle>About me</StyledAboutTitle>
+            <StyledGeneralP>
+              I am an ambitious front-end developer seeking my first commercial
+              experience.
+            </StyledGeneralP>
+            <StyledSecondaryP>
+              Besides programming, I am a music enthusiast, coffee lover, and
+              self-taught guitarist. I am currently seeking opportunities to
+              apply my skills and enthusiasm to an IT company in Ukraine or
+              Slovakia. I am eager to take on new challenges.
+            </StyledSecondaryP>
+            <Button
+              type="primary"
+              isInHero={false}
+              text="Download CV"
+              is={"button"}
+              onClick={handleDownloadCV}
+            >
+              <CVSvg />
+            </Button>
+          </div>
+        </StyledAboutWrapper>
+      </StyledAboutSection>
+    </>
   );
 };
 

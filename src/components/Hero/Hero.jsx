@@ -9,6 +9,7 @@ import {
   StyledTitle,
 } from "./Hero.styled";
 import Button from "components/Button/Button";
+import { handleDownloadCV } from "helpers/downloadCV";
 
 const Hero = () => {
   return (
@@ -23,11 +24,22 @@ const Hero = () => {
           HTML, CSS, JavaScript, React, and Node.js .
         </StyledAbout>
         <LinksWrapper>
-          <Button type="secondary" isInHero={true} text="My resume">
+          <Button
+            type="secondary"
+            isInHero={true}
+            text="Download CV"
+            is={"button"}
+            onClick={handleDownloadCV}
+          >
             <CVSvg />
           </Button>
 
-          <Button type="primary" isInHero={true} text="Get in touch">
+          <Button
+            type="primary"
+            isInHero={true}
+            text="Get in touch"
+            is={"button"}
+          >
             <ArrowRightSvg />
           </Button>
         </LinksWrapper>

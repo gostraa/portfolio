@@ -60,6 +60,7 @@ const ModalInfo = ({ onClose, currentProject }) => {
             text={"Github Pages"}
             type={"primary"}
             link={currentProject.link}
+            is={"link"}
           />
         </InfoWrap>
       </ModalContainer>

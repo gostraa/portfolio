@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ type, isInHero, text, children, link }) => {
+const Button = ({ type, isInHero, text, children, link, is, onClick }) => {
   const width = isInHero ? "155px" : "180px";
   const background =
     type === "primary" ? "var(--primary-color)" : "var(--surface-secondary)";
@@ -24,7 +24,7 @@ const Button = ({ type, isInHero, text, children, link }) => {
     fontWeight: "500",
     lineHeight: "1.5",
   };
-  return (
+  return is === "link" ? (
     <a
       href={link}
       style={{ width: width, background: background, ...buttonStyles }}
@@ -32,6 +32,19 @@ const Button = ({ type, isInHero, text, children, link }) => {
       {children}
       <span style={spanStyles}>{text}</span>
     </a>
+  ) : (
+    <button
+      style={{
+        border: "none",
+        width: width,
+        background: background,
+        ...buttonStyles,
+      }}
+      onClick={() => onClick && onClick()}
+    >
+      {children}
+      <span style={spanStyles}>{text}</span>
+    </button>
   );
 };
 
