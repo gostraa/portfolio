@@ -4,7 +4,7 @@ export const StyledHeroWrapper = styled.section`
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
-  padding: 10px 24px;
+  padding: 50px 24px 10px 24px;
   flex-direction: column;
   justify-content: center;
   align-items: center;

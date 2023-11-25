@@ -4,7 +4,7 @@ export const StyledAboutSection = styled.section`
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  padding: 48px 24px;
+  padding: 98px 24px 38px 24px;
 `;
 
 export const ArrowWrapper = styled.div`

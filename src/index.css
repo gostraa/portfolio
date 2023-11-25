@@ -1,5 +1,7 @@
 @import-normalize; /* bring in normalize.css styles */
-
+* {
+  box-sizing: border-box;
+}
 :root {
   --primary-color: #8a42db;
   --background: #171023;

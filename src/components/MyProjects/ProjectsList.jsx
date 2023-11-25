@@ -82,14 +82,12 @@ const ProjectsList = ({ projectsList }) => {
               onClick={() => handleOpenModal(project.name)}
               key={project.name}
             >
-              <div>
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  width={310}
-                  height={170}
-                />
-              </div>
+              <img
+                src={project.image}
+                alt={project.name}
+                width={300}
+                height={170}
+              />
 
               <StyledDate>{project.date}</StyledDate>
 

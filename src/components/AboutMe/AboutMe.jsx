@@ -21,7 +21,7 @@ import { handleDownloadCV } from "helpers/downloadCV";
 const AboutMe = () => {
   return (
     <>
-      <StyledAboutSection>
+      <StyledAboutSection id="about">
         <ArrowWrapper>
           <ArrowSvg />
         </ArrowWrapper>

@@ -10,19 +10,23 @@ export const StyledListProject = styled.ul`
     gap: 24px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767.9px) {
     & .slick-slide {
-      max-width: 353px;
+      max-width: 355px;
     }
+  }
+  & .slick-slide > div {
+    width: 336px;
   }
 
   @media screen and (min-width: 1440px) {
     & .slick-slide {
       max-width: 590px;
     }
-  }
-  & .slick-slide > div {
-    width: 312px;
+
+    & .slick-slide > div {
+      width: 352px;
+    }
   }
 
   & .slick-list > div {
@@ -30,10 +34,10 @@ export const StyledListProject = styled.ul`
       margin: 0 10px;
     }
     @media screen and (min-width: 1439.9px) and (max-width: 1619.5px) {
-      margin: 0 35px;
+      margin: 0 25px;
     }
     @media screen and (min-width: 1620px) {
-      margin: 0 55px;
+      margin: 0 30px;
     }
   }
 `;
