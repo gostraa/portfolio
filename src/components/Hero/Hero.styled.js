@@ -35,7 +35,7 @@ export const StyledTitle = styled.h1`
   font-family: Kalam, sans-serif;
   font-size: 40px;
   line-height: 1.4;
-  max-width: 250px;
+  max-width: 280px;
   background: linear-gradient(90deg, #9955e8 0%, #7bffaf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
