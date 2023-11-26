@@ -1,12 +1,12 @@
-import { ReactComponent as TypingSvg } from "../../svg/bro.svg";
 import { ReactComponent as CVSvg } from "../../svg/ReadCvLogo.svg";
-import { ReactComponent as ArrowRightSvg } from "../../svg/ArrowRight.svg";
+// import { ReactComponent as ArrowRightSvg } from "../../svg/ArrowRight.svg";
 import {
   LinksWrapper,
   StyledAbout,
   StyledHeroWrapper,
   StyledI,
   StyledTitle,
+  Typing,
 } from "./Hero.styled";
 import Button from "components/Button/Button";
 import { handleDownloadCV } from "helpers/downloadCV";
@@ -14,8 +14,7 @@ import { handleDownloadCV } from "helpers/downloadCV";
 const Hero = () => {
   return (
     <StyledHeroWrapper>
-      <TypingSvg width="322" height="276" />
-
+      <Typing />
       <div>
         <StyledTitle>Hi, I'm Mariia</StyledTitle>
         <StyledI>Front-end developer</StyledI>
@@ -25,7 +24,7 @@ const Hero = () => {
         </StyledAbout>
         <LinksWrapper>
           <Button
-            type="secondary"
+            type="primary"
             isInHero={true}
             text="Download CV"
             is={"button"}
@@ -34,14 +33,14 @@ const Hero = () => {
             <CVSvg />
           </Button>
 
-          <Button
+          {/* <Button
             type="primary"
             isInHero={true}
             text="Get in touch"
             is={"button"}
           >
             <ArrowRightSvg />
-          </Button>
+          </Button> */}
         </LinksWrapper>
       </div>
     </StyledHeroWrapper>

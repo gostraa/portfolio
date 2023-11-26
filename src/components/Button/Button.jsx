@@ -28,6 +28,8 @@ const Button = ({ type, isInHero, text, children, link, is, onClick }) => {
     <a
       href={link}
       style={{ width: width, background: background, ...buttonStyles }}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {children}
       <span style={spanStyles}>{text}</span>

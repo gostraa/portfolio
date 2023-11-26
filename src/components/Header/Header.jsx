@@ -24,15 +24,10 @@ const Header = () => {
     setIsOpenMenu((isOpen) => !isOpen);
   };
 
-  const iconStyle = {
-    width: "36px",
-    height: "36px",
-  };
   return (
     <>
       {isOpenMenu && <NavigationMenu toggleNav={toggleNav} />}
       <StyledHeader>
-        <FaLaptopCode color="#7BFFAF" style={iconStyle} />
         {!isDesktop ? (
           <MenuBtnIcon onClick={toggleNav} width={"36px"} height={"36px"} />
         ) : (

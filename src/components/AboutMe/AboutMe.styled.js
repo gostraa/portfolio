@@ -1,17 +1,43 @@
 import styled from "styled-components";
 
+import { ReactComponent as DevGrlSvg } from "../../svg/devGirl.svg";
+
+export const Girl = styled(DevGrlSvg)`
+  width: 312px;
+  height: 276px;
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    height: 350px;
+  }
+  @media screen and (min-width: 1024px) {
+    min-width: 452px;
+    min-height: 402px;
+  }
+`;
+
 export const StyledAboutSection = styled.section`
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  padding: 98px 24px 38px 24px;
+  padding: 70px 24px 38px 24px;
 `;
 
 export const ArrowWrapper = styled.div`
   position: absolute;
-  right: 50px;
+  right: 80px;
   top: 25px;
   transform: rotateZ(145deg);
+
+  @media screen and (min-width: 1024px) {
+    width: 200px;
+    left: 40%;
+    top: -10%;
+    & svg {
+      width: 250px;
+      height: 250px;
+    }
+  }
 `;
 export const StyledAboutWrapper = styled.div`
   display: flex;
@@ -21,6 +47,15 @@ export const StyledAboutWrapper = styled.div`
   padding: 15px 10px;
   border-radius: 8px;
   background-color: var(--surface-primary);
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    padding: 72px;
+    gap: 60px;
+  }
+`;
+
+export const InfoWrapAbout = styled.div`
+  max-width: 592px;
 `;
 
 export const SvgWrapper = styled.div`
@@ -29,6 +64,12 @@ export const SvgWrapper = styled.div`
   align-items: center;
   gap: 24px;
   margin-bottom: 15px;
+  @media screen and (min-width: 1024px) {
+    & svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
 `;
 export const StyledAboutTitle = styled.h2`
   color: #7dffaf;
@@ -36,6 +77,9 @@ export const StyledAboutTitle = styled.h2`
   font-size: 16px;
   line-height: 1;
   margin-bottom: 6px;
+  @media screen and (min-width: 1024px) {
+    font-size: 22px;
+  }
 `;
 
 export const StyledGeneralP = styled.p`
@@ -45,6 +89,9 @@ export const StyledGeneralP = styled.p`
   font-weight: 500;
   line-height: 1.3;
   margin-bottom: 16px;
+  @media screen and (min-width: 1024px) {
+    font-size: 28px;
+  }
 `;
 
 export const StyledSecondaryP = styled.p`
@@ -53,4 +100,7 @@ export const StyledSecondaryP = styled.p`
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 32px;
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+  }
 `;

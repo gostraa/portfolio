@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 10px 25px;
   width: 100%;
@@ -13,5 +13,6 @@ export const StyledHeader = styled.div`
   z-index: 1;
   @media screen and (min-width: 1024px) {
     padding: 10px 40px;
+    justify-content: center;
   }
 `;

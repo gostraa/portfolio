@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
-  padding: 68px 24px;
+  padding: 68px 24px 48px 24px;
   max-width: 1440px;
   margin: 0 auto;
   @media screen and (max-width: 767.9px) {
@@ -26,6 +26,9 @@ export const StyledTitle = styled.h2`
   font-size: 16px;
   line-height: 1;
   margin-bottom: 8px;
+  @media screen and (min-width: 1024px) {
+    font-size: 22px;
+  }
 `;
 
 export const StyledDescr = styled.p`
@@ -36,4 +39,7 @@ export const StyledDescr = styled.p`
   font-weight: 500;
   line-height: 1.33;
   margin-bottom: 40px;
+  @media screen and (min-width: 1024px) {
+    font-size: 28px;
+  }
 `;

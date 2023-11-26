@@ -1,4 +1,3 @@
-import { ReactComponent as DevGrlSvg } from "../../svg/devGirl.svg";
 import { ReactComponent as HTMLSvg } from "../../svg/icons8-html.svg";
 import { ReactComponent as CSSSvg } from "../../svg/icons8-css3.svg";
 import { ReactComponent as JSSvg } from "../../svg/JavaScript.svg";
@@ -9,6 +8,8 @@ import { ReactComponent as ArrowSvg } from "../../svg/Graphic3.svg";
 import Button from "components/Button/Button";
 import {
   ArrowWrapper,
+  Girl,
+  InfoWrapAbout,
   StyledAboutSection,
   StyledAboutTitle,
   StyledAboutWrapper,
@@ -27,8 +28,8 @@ const AboutMe = () => {
         </ArrowWrapper>
 
         <StyledAboutWrapper>
-          <DevGrlSvg width="312" height="276" />
-          <div>
+          <Girl />
+          <InfoWrapAbout>
             <SvgWrapper>
               <HTMLSvg />
               <CSSSvg />
@@ -57,7 +58,7 @@ const AboutMe = () => {
             >
               <CVSvg />
             </Button>
-          </div>
+          </InfoWrapAbout>
         </StyledAboutWrapper>
       </StyledAboutSection>
     </>

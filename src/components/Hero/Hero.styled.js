@@ -1,4 +1,19 @@
 import styled from "styled-components";
+import { ReactComponent as TypingSvg } from "../../svg/bro.svg";
+
+export const Typing = styled(TypingSvg)`
+  width: 322px;
+  height: 276px;
+
+  @media screen and (min-width: 768px) {
+    width: 422px;
+    height: 376px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 482px;
+    height: 426px;
+  }
+`;
 
 export const StyledHeroWrapper = styled.section`
   max-width: 1440px;
@@ -10,12 +25,17 @@ export const StyledHeroWrapper = styled.section`
   align-items: center;
   gap: 34px;
   align-self: stretch;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row-reverse;
+  }
 `;
 
 export const StyledTitle = styled.h1`
   font-family: Kalam, sans-serif;
   font-size: 40px;
   line-height: 1.4;
+  max-width: 250px;
   background: linear-gradient(90deg, #9955e8 0%, #7bffaf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -36,6 +56,11 @@ export const StyledAbout = styled.p`
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 30px;
+  max-width: 600px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+  }
 `;
 
 export const LinksWrapper = styled.div`
