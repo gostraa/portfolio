@@ -4,26 +4,17 @@ import { ReactComponent as StarSecond } from "../../svg/Graphic1.svg";
 
 export const StarSvg = styled(Star)`
   position: absolute;
-  left: -10px;
-  bottom: 10%;
+  left: 30px;
+  bottom: -15%;
   z-index: -1;
   transform: rotateZ(35deg);
-  @media screen and (min-width: 1440px) {
-    width: 220px;
-    height: 220px;
-  }
 `;
 
 export const StarSecondSvg = styled(StarSecond)`
   position: absolute;
-  right: -10px;
-  bottom: 50%;
+  right: 30px;
+  bottom: 75%;
   z-index: -1;
-
-  @media screen and (min-width: 1440px) {
-    width: 200px;
-    height: 200px;
-  }
 `;
 
 export const SkillsSection = styled.div`
