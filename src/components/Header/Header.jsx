@@ -1,4 +1,3 @@
-import { FaLaptopCode } from "react-icons/fa6";
 import { ReactComponent as MenuBtnIcon } from "../../svg/List.svg";
 // import { ReactComponent as MoonIcon } from "../../svg/MoonStars.svg";
 // import { ReactComponent as SunIcon } from "../../svg/SunDim.svg";
