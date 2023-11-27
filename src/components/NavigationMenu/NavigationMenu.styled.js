@@ -1,6 +1,6 @@
 import styled from "styled-components";
-
-export const Backdrop = styled.div`
+import { motion } from "framer-motion";
+export const Backdrop = styled(motion.div)`
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@ export const Backdrop = styled.div`
   z-index: 2;
 `;
 
-export const Menu = styled.div`
+export const Menu = styled(motion.div)`
   position: fixed;
   top: 0;
   right: 0;

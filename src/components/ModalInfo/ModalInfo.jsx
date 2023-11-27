@@ -12,6 +12,8 @@ import {
 } from "./ModalInfo.styled";
 
 import { useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+import { animationSettingsModal } from "constants/constants";
 
 const ModalInfo = ({ onClose, currentProject }) => {
   console.log(currentProject.name);
@@ -39,31 +41,33 @@ const ModalInfo = ({ onClose, currentProject }) => {
 
   return createPortal(
     <Backdrop onClick={handleBackdropClick}>
-      <ModalContainer>
-        <SvgWrap onClick={onClose}>
-          <ArrowLeftSvg />
-        </SvgWrap>
-        <ImgWrapper>
-          <Img src={currentProject.image} alt={currentProject.name} />
-        </ImgWrapper>
-        <InfoWrap>
-          <p>{currentProject.date}</p>
+      <AnimatePresence>
+        <ModalContainer {...animationSettingsModal}>
+          <SvgWrap onClick={onClose}>
+            <ArrowLeftSvg />
+          </SvgWrap>
+          <ImgWrapper>
+            <Img src={currentProject.image} alt={currentProject.name} />
+          </ImgWrapper>
+          <InfoWrap>
+            <p>{currentProject.date}</p>
 
-          <h2>{currentProject.name}</h2>
-          <p>{currentProject.description}</p>
-          <p>My role in this project : {currentProject.role}</p>
-          <p>Technologies : {currentProject.skills}</p>
+            <h2>{currentProject.name}</h2>
+            <p>{currentProject.description}</p>
+            <p>My role in this project : {currentProject.role}</p>
+            <p>Technologies : {currentProject.skills}</p>
 
-          <p>I`m worked on : {currentProject.workedOn}</p>
-          <Primary>Take a look at this project</Primary>
-          <Button
-            text={"Github Page"}
-            type={"primary"}
-            link={currentProject.link}
-            is={"link"}
-          />
-        </InfoWrap>
-      </ModalContainer>
+            <p>I`m worked on : {currentProject.workedOn}</p>
+            <Primary>Take a look at this project</Primary>
+            <Button
+              text={"Github Page"}
+              type={"primary"}
+              link={currentProject.link}
+              is={"link"}
+            />
+          </InfoWrap>
+        </ModalContainer>
+      </AnimatePresence>
     </Backdrop>,
     modal
   );

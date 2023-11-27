@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useMediaQuery } from "react-responsive";
 import { useState } from "react";
 import ModalInfo from "components/ModalInfo/ModalInfo";
+import { settings } from "constants/constants";
 
 const ProjectsList = ({ projectsList }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 767.9px)" });
@@ -26,32 +27,7 @@ const ProjectsList = ({ projectsList }) => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 400,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: false,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+
   return (
     <StyledListProject>
       {isMobile ? (

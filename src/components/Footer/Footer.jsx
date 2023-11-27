@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as GitHub } from "../../svg/logo-github.svg";
 import { ReactComponent as Linkedin } from "../../svg/logo-linkedin.svg";
 import { ReactComponent as Instagram } from "../../svg/logo-instagram.svg";
+import { motion } from "framer-motion";
 
 import {
   FooterContainer,
@@ -13,14 +14,16 @@ import {
   SocialList,
   TitleFooter,
 } from "./Footer.styled";
+import { animationSettingsFooter } from "constants/constants";
 
 const Footer = () => {
   return (
     <FooterSection id="socialMedia">
       <FooterContainer>
-        <div>
+        <motion.div {...animationSettingsFooter}>
           <MyAvatar />
-        </div>
+        </motion.div>
+
         <div>
           <TitleFooter>Contact</TitleFooter>
           <Primary>Enjoyed my work? Let’s work together</Primary>

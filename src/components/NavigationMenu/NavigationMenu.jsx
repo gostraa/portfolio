@@ -2,6 +2,8 @@ import { ReactComponent as Close } from "../../svg/X.svg";
 import { Link } from "react-scroll";
 import { Backdrop, Menu, Nav } from "./NavigationMenu.styled";
 import { useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+import { animationSettingsNavigate } from "constants/constants";
 
 const NavigationMenu = ({ toggleNav }) => {
   const iconStyle = {
@@ -32,49 +34,51 @@ const NavigationMenu = ({ toggleNav }) => {
     }
   };
   return (
-    <Backdrop onClick={handleBackdropClick}>
-      <Menu>
-        <Close onClick={toggleNav} style={{ ...iconStyle }} />
-        <Nav>
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            onClick={toggleNav}
-            style={linkStyle}
-          >
-            About me
-          </Link>
-          <Link
-            to="projects"
-            smooth={true}
-            duration={500}
-            onClick={toggleNav}
-            style={linkStyle}
-          >
-            Projects
-          </Link>
-          <Link
-            to="skills"
-            smooth={true}
-            duration={500}
-            onClick={toggleNav}
-            style={linkStyle}
-          >
-            Skills
-          </Link>
-          <Link
-            to="socialMedia"
-            smooth={true}
-            duration={500}
-            onClick={toggleNav}
-            style={linkStyle}
-          >
-            My Social Media
-          </Link>
-        </Nav>
-      </Menu>
-    </Backdrop>
+    <AnimatePresence>
+      <Backdrop onClick={handleBackdropClick} key="unique-key2">
+        <Menu {...animationSettingsNavigate} key="unique-key">
+          <Close onClick={toggleNav} style={{ ...iconStyle }} />
+          <Nav>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              onClick={toggleNav}
+              style={linkStyle}
+            >
+              About me
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={500}
+              onClick={toggleNav}
+              style={linkStyle}
+            >
+              Projects
+            </Link>
+            <Link
+              to="skills"
+              smooth={true}
+              duration={500}
+              onClick={toggleNav}
+              style={linkStyle}
+            >
+              Skills
+            </Link>
+            <Link
+              to="socialMedia"
+              smooth={true}
+              duration={500}
+              onClick={toggleNav}
+              style={linkStyle}
+            >
+              My Social Media
+            </Link>
+          </Nav>
+        </Menu>
+      </Backdrop>
+    </AnimatePresence>
   );
 };
 

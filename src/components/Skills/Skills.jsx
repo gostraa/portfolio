@@ -1,3 +1,4 @@
+import { animationSettingsSkills } from "constants/constants";
 import {
   SkillsList,
   SkillsSection,
@@ -5,6 +6,8 @@ import {
   StarSecondSvg,
   StarSvg,
 } from "./Skills.styled";
+
+import { motion } from "framer-motion";
 const skillsArr = [
   "HTML5",
   "CSS",
@@ -26,8 +29,12 @@ const Skills = () => {
       <div>
         <SkillsTitle>Skills</SkillsTitle>
         <SkillsList>
-          {skillsArr.map((skill) => {
-            return <li>{skill}</li>;
+          {skillsArr.map((skill, i) => {
+            return (
+              <motion.li key={skill} custom={i} {...animationSettingsSkills}>
+                {skill}
+              </motion.li>
+            );
           })}
         </SkillsList>
       </div>

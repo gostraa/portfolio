@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Backdrop = styled.div`
   position: fixed;
@@ -15,7 +16,7 @@ export const Backdrop = styled.div`
   z-index: 2;
 `;
 
-export const ModalContainer = styled.div`
+export const ModalContainer = styled(motion.div)`
   position: relative;
   border-radius: 24px;
   background: var(--surface-primary);
@@ -66,7 +67,7 @@ export const ImgWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 260px;
+  height: 270px;
   background-image: linear-gradient(
     to right,
     #8a42db,
@@ -81,7 +82,7 @@ export const ImgWrapper = styled.div`
 `;
 export const Img = styled.img`
   width: 325px;
-  height: 215px;
+  height: 190px;
   @media screen and (min-width: 767.9px) {
     width: 540px;
     height: 295px;
