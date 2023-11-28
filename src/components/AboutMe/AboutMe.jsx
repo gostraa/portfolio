@@ -5,7 +5,9 @@ import { ReactComponent as ReactSvg } from "../../svg/React.svg";
 import { ReactComponent as NodeSvg } from "../../svg/Node.js.svg";
 import { ReactComponent as CVSvg } from "../../svg/ReadCvLogo.svg";
 import { ReactComponent as ArrowSvg } from "../../svg/Graphic3.svg";
+
 import Button from "components/Button/Button";
+
 import {
   ArrowWrapper,
   Girl,
@@ -17,6 +19,7 @@ import {
   StyledSecondaryP,
   SvgWrapper,
 } from "./AboutMe.styled";
+
 import { handleDownloadCV } from "helpers/downloadCV";
 
 const AboutMe = () => {

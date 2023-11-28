@@ -1,3 +1,10 @@
+import { useMediaQuery } from "react-responsive";
+import { useState } from "react";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import {
   StyledDate,
   StyledItem,
@@ -5,11 +12,6 @@ import {
   StyledTitleDescr,
 } from "./MyProjectsList.styled";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { useMediaQuery } from "react-responsive";
-import { useState } from "react";
 import ModalInfo from "components/ModalInfo/ModalInfo";
 import { settings } from "constants/constants";
 

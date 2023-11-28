@@ -134,3 +134,22 @@ export const linkSettings = {
   duration: 500,
   style: linkStyle,
 };
+
+// skills array
+
+export const skillsArr = [
+  "HTML5",
+  "CSS",
+  "CSS-Grid",
+  "Framer Motion",
+  "Responsive/Adaptive Design",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Redux-toolkit",
+  "Styled Components",
+  "REST API",
+  "Node.js",
+  "MongoDB",
+  "GIT",
+];

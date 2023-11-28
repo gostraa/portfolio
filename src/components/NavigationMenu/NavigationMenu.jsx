@@ -1,8 +1,11 @@
-import { ReactComponent as Close } from "../../svg/X.svg";
 import { Link } from "react-scroll";
-import { Backdrop, Menu, Nav } from "./NavigationMenu.styled";
 import { useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
+
+import { ReactComponent as Close } from "../../svg/X.svg";
+
+import { Backdrop, Menu, Nav } from "./NavigationMenu.styled";
+
 import { animationSettingsNavigate } from "constants/constants";
 
 const NavigationMenu = ({ toggleNav }) => {

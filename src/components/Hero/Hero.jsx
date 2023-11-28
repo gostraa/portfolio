@@ -1,4 +1,5 @@
 import { ReactComponent as CVSvg } from "../../svg/ReadCvLogo.svg";
+
 import {
   LinksWrapper,
   StyledAbout,
@@ -7,6 +8,7 @@ import {
   StyledTitle,
   Typing,
 } from "./Hero.styled";
+
 import Button from "components/Button/Button";
 import { handleDownloadCV } from "helpers/downloadCV";
 

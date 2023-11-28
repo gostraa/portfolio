@@ -1,9 +1,11 @@
-import { BurgerSvg, StyledHeader } from "./Header.styled";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-scroll";
 import { useState } from "react";
+
 import NavigationMenu from "components/NavigationMenu/NavigationMenu";
 import { Nav } from "components/NavigationMenu/NavigationMenu.styled";
+import { BurgerSvg, StyledHeader } from "./Header.styled";
+
 import { linkSettings } from "constants/constants";
 
 const Header = () => {

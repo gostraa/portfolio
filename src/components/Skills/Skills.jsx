@@ -1,4 +1,6 @@
-import { animationSettingsSkills } from "constants/constants";
+import { motion } from "framer-motion";
+
+import { animationSettingsSkills, skillsArr } from "constants/constants";
 import {
   SkillsList,
   SkillsSection,
@@ -6,24 +8,6 @@ import {
   StarSecondSvg,
   StarSvg,
 } from "./Skills.styled";
-
-import { motion } from "framer-motion";
-const skillsArr = [
-  "HTML5",
-  "CSS",
-  "CSS-Grid",
-  "Framer Motion",
-  "Responsive/Adaptive Design",
-  "JavaScript",
-  "React",
-  "Redux",
-  "Redux-toolkit",
-  "Styled Components",
-  "REST API",
-  "Node.js",
-  "MongoDB",
-  "GIT",
-];
 
 const Skills = () => {
   return (

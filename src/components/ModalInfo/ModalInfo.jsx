@@ -1,6 +1,10 @@
-import Button from "components/Button/Button";
-import { ReactComponent as ArrowLeftSvg } from "../../svg/ArrowLeft.svg";
 import { createPortal } from "react-dom";
+import { useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+
+import { ReactComponent as ArrowLeftSvg } from "../../svg/ArrowLeft.svg";
+
+import Button from "components/Button/Button";
 import {
   Backdrop,
   Img,
@@ -11,8 +15,6 @@ import {
   SvgWrap,
 } from "./ModalInfo.styled";
 
-import { useEffect } from "react";
-import { AnimatePresence } from "framer-motion";
 import { animationSettingsModal } from "constants/constants";
 
 const ModalInfo = ({ onClose, currentProject }) => {

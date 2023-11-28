@@ -1,8 +1,7 @@
-import React from "react";
+import { motion } from "framer-motion";
 import { ReactComponent as GitHub } from "../../svg/logo-github.svg";
 import { ReactComponent as Linkedin } from "../../svg/logo-linkedin.svg";
 import { ReactComponent as Instagram } from "../../svg/logo-instagram.svg";
-import { motion } from "framer-motion";
 
 import {
   FooterContainer,
