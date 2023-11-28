@@ -2,7 +2,7 @@ import minimalImg from "../src/images/projects/minimal.png";
 import cinemaImg from "../src/images/projects/cinema.png";
 import moneyGuardImg from "../src/images/projects/moneyguard.png";
 import carRentImg from "../src/images/projects/carrent.png";
-
+import englishImg from "../src/images/projects/english.png";
 const projectsList = [
   {
     name: "MINIMAL",
@@ -55,6 +55,19 @@ const projectsList = [
     link: "https://gostraa.github.io/technical_task",
     role: " Front-end developer",
     workedOn: " My own project",
+  },
+  {
+    name: "Language Coach",
+    date: "Nov 2023",
+    title: "Personal website for an English language teacher",
+    description:
+      "First experience working on a real project within a cross-functional team.",
+    image: englishImg,
+
+    skills: " CSS , HTML , JavaScript , React , CSS-Grid",
+    link: "https://sakhnodima.github.io/Landing_English/",
+    role: " Front-end developer",
+    workedOn: "  Submission form and My service section",
   },
 ];
 
