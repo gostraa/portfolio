@@ -1,5 +1,4 @@
 import { ReactComponent as CVSvg } from "../../svg/ReadCvLogo.svg";
-// import { ReactComponent as ArrowRightSvg } from "../../svg/ArrowRight.svg";
 import {
   LinksWrapper,
   StyledAbout,
@@ -32,15 +31,6 @@ const Hero = () => {
           >
             <CVSvg />
           </Button>
-
-          {/* <Button
-            type="primary"
-            isInHero={true}
-            text="Get in touch"
-            is={"button"}
-          >
-            <ArrowRightSvg />
-          </Button> */}
         </LinksWrapper>
       </div>
     </StyledHeroWrapper>

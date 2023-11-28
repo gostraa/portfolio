@@ -47,6 +47,10 @@ export const SvgWrap = styled.div`
   box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   cursor: pointer;
+  &:hover {
+    scale: 1.2;
+    box-shadow: 0px 0px 48px 0px rgba(125, 255, 175, 0.24);
+  }
   @media screen and (min-width: 767.9px) {
     width: 38px;
     height: 38px;

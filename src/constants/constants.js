@@ -121,3 +121,16 @@ export const settings = {
     },
   ],
 };
+
+// styles for header links
+
+const linkStyle = {
+  cursor: "pointer",
+};
+
+export const linkSettings = {
+  offset: -150,
+  smooth: true,
+  duration: 500,
+  style: linkStyle,
+};

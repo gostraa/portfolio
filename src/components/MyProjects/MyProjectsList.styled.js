@@ -58,7 +58,7 @@ export const StyledItem = styled.li`
 
   h3 {
     color: var(--text-primary);
-    font-family: Heebo, sans-serif;
+    font-family: Kalam, sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -80,11 +80,16 @@ export const StyledDate = styled.p`
 `;
 
 export const StyledTitleDescr = styled.p`
+  width: 300px;
   color: var(--text-primary);
-  font-family: Heebo, sans-serif;
+  font-family: Kalam, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  @media screen and (min-width: 768px) {
+    width: 202px;
+  }
   @media screen and (min-width: 1440px) {
+    width: 300px;
     font-size: 25px;
     line-height: 1;
   }

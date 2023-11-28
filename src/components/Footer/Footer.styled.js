@@ -100,4 +100,8 @@ export const SocialLink = styled.a`
   padding: 12px;
   border-radius: 8px;
   background: var(--surface-secondary);
+  &:hover {
+    scale: 1.2;
+    box-shadow: 0px 0px 48px 0px rgba(125, 255, 175, 0.24);
+  }
 `;

@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { ReactComponent as MenuBtnIcon } from "../../svg/List.svg";
+
+export const BurgerSvg = styled(MenuBtnIcon)`
+  cursor: pointer;
+`;
 
 export const StyledHeader = styled.div`
   display: flex;
