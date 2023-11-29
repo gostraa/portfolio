@@ -54,3 +54,11 @@ button {
   cursor: pointer;
   background-color: inherit;
 }
+
+::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
