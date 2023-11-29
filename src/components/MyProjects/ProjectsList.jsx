@@ -1,7 +1,5 @@
 import { useMediaQuery } from "react-responsive";
 import { useState } from "react";
-import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -9,6 +7,9 @@ import {
   StyledDate,
   StyledItem,
   StyledListProject,
+  StyledProImg,
+  StyledSlideItem,
+  StyledSlideList,
   StyledTitleDescr,
 } from "./MyProjectsList.styled";
 
@@ -31,41 +32,22 @@ const ProjectsList = ({ projectsList }) => {
   };
 
   return (
-    <StyledListProject>
+    <>
       {isMobile ? (
-        projectsList.map((project) => (
-          <StyledItem
-            onClick={() => handleOpenModal(project.name)}
-            key={project.name}
-          >
-            <div>
-              <img
-                src={project.image}
-                alt={project.name}
-                width={310}
-                height={170}
-              />
-            </div>
-
-            <StyledDate>{project.date}</StyledDate>
-
-            <h3>{project.name}</h3>
-            <StyledTitleDescr>{project.title}</StyledTitleDescr>
-          </StyledItem>
-        ))
-      ) : (
-        <Slider {...settings}>
+        <StyledListProject>
           {projectsList.map((project) => (
             <StyledItem
               onClick={() => handleOpenModal(project.name)}
               key={project.name}
             >
-              <img
-                src={project.image}
-                alt={project.name}
-                width={300}
-                height={170}
-              />
+              <div>
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  width={310}
+                  height={170}
+                />
+              </div>
 
               <StyledDate>{project.date}</StyledDate>
 
@@ -73,12 +55,29 @@ const ProjectsList = ({ projectsList }) => {
               <StyledTitleDescr>{project.title}</StyledTitleDescr>
             </StyledItem>
           ))}
-        </Slider>
+        </StyledListProject>
+      ) : (
+        <StyledSlideList {...settings}>
+          {projectsList.map((project) => (
+            <StyledSlideItem
+              onClick={() => handleOpenModal(project.name)}
+              key={project.name}
+            >
+              <StyledProImg src={project.image} alt={project.name} />
+
+              <StyledDate>{project.date}</StyledDate>
+
+              <h3>{project.name}</h3>
+              <StyledTitleDescr>{project.title}</StyledTitleDescr>
+            </StyledSlideItem>
+          ))}
+        </StyledSlideList>
       )}
+
       {isModalOpen && (
         <ModalInfo currentProject={currentProject} onClose={handleCloseModal} />
       )}
-    </StyledListProject>
+    </>
   );
 };
 

@@ -104,19 +104,21 @@ export const settings = {
   initialSlide: 0,
   responsive: [
     {
-      breakpoint: 1440,
+      breakpoint: 950,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         infinite: false,
         dots: false,
       },
     },
     {
-      breakpoint: 1024,
+      breakpoint: 1440,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
+        infinite: false,
+        dots: false,
       },
     },
   ],

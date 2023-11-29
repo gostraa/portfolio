@@ -10,13 +10,6 @@ export const StyledSection = styled.section`
     align-items: center;
     justify-content: center;
   }
-
-  @media screen and (min-width: 768px) {
-    padding: 48px 28px;
-  }
-  @media screen and (min-width: 1440px) {
-    padding: 48px 90px;
-  }
 `;
 
 export const StyledTitle = styled.h2`
@@ -26,9 +19,6 @@ export const StyledTitle = styled.h2`
   font-size: 16px;
   line-height: 1;
   margin-bottom: 8px;
-  @media screen and (min-width: 1024px) {
-    font-size: 22px;
-  }
 `;
 
 export const StyledDescr = styled.p`
@@ -39,7 +29,4 @@ export const StyledDescr = styled.p`
   font-weight: 500;
   line-height: 1.33;
   margin-bottom: 40px;
-  @media screen and (min-width: 1024px) {
-    font-size: 28px;
-  }
 `;

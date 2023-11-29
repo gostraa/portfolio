@@ -17,6 +17,7 @@ const projectsList = [
     role: " Front-end developer",
     workedOn: " CLIENTS REVIEWS and NEWSLETTER sections",
   },
+
   {
     name: "CINEMANIA",
     date: "Aug 2023",
