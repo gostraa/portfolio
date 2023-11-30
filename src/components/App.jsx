@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Header from "./Header/Header";
 import Hero from "./Hero/Hero";
 import AboutMe from "./AboutMe/AboutMe";
@@ -8,7 +8,7 @@ import Footer from "./Footer/Footer";
 
 export const App = () => {
   return (
-    <>
+    <Suspense fallback={"...loading"}>
       <header>
         <Header />
       </header>
@@ -21,6 +21,6 @@ export const App = () => {
       <footer>
         <Footer />
       </footer>
-    </>
+    </Suspense>
   );
 };
