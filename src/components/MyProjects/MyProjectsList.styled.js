@@ -46,14 +46,12 @@ export const StyledSlideList = styled(Slider)`
   margin-bottom: 40px;
 
   & .slick-slide > div {
-    margin: 0 24px;
+    margin: 0 20px;
     max-width: 305px;
     max-width: 372px;
   }
   @media screen and (min-width: 1024px) {
     & .slick-slide > div {
-      margin: 0 8px;
-      max-width: 304px;
     }
   }
   @media screen and (min-width: 1440px) {
