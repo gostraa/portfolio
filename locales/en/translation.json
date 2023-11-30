@@ -1,0 +1,35 @@
+{
+  "navMenu": {
+    "About me": "About me",
+    "Projects": "Projects",
+    "Skills": "Skills",
+    "My Social Media": "My Social Media"
+  },
+  "hero": {
+    "Hi, I'm Mariia": "Hi, I'm Mariia",
+    "Front-end developer": "Front-end developer",
+    "I specialize in building web applications": "I specialize in building web applications",
+    "using technologies such as HTML, CSS, JavaScript, React, and Node.js .": "using technologies such as HTML, CSS, JavaScript, React, and Node.js .",
+    "Download CV": "Download CV"
+  },
+  "aboutMe": {
+    "About me": "About me",
+    "I am an ambitious front-end developer seeking my first commercial experience.": "I am an ambitious front-end developer seeking my first commercial experience.",
+    "Besides programming, I am a music enthusiast, coffee lover, and self-taught guitarist.": "Besides programming, I am a music enthusiast, coffee lover, andself-taught guitarist.",
+    "I am currently seeking opportunities to apply my skills and enthusiasm to an IT company in Ukraine or Slovakia.": "I am currently seeking opportunities to apply my skills and enthusiasm to an IT company in Ukraine or Slovakia.",
+    "Download CV": "Download CV"
+  },
+  "skills": {
+    "Skills": "Skills"
+  },
+  "projects": {
+    "Projects": "Projects",
+    "Take a look at my highlighted projects": "Take a look at my highlighted projects"
+  },
+  "footer": {
+    "Contact": "Contact",
+    "Enjoyed my work? Let’s work together": "Enjoyed my work? Let’s work together",
+    "I’m always up for a chat. Pop me an email at": "I’m always up for a chat. Pop me an email at",
+    "or give me a shout on social media.": "or give me a shout on social media."
+  }
+}
