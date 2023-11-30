@@ -50,7 +50,7 @@ const AboutMe = () => {
               Besides programming, I am a music enthusiast, coffee lover, and
               self-taught guitarist. I am currently seeking opportunities to
               apply my skills and enthusiasm to an IT company in Ukraine or
-              Slovakia. I am eager to take on new challenges.
+              Slovakia.
             </StyledSecondaryP>
             <Button
               type="primary"
