@@ -14,9 +14,14 @@
   },
   "aboutMe": {
     "About me": "About me",
-    "I am an ambitious front-end developer seeking my first commercial experience.": "I am an ambitious front-end developer seeking my first commercial experience.",
-    "Besides programming, I am a music enthusiast, coffee lover, and self-taught guitarist.": "Besides programming, I am a music enthusiast, coffee lover, andself-taught guitarist.",
-    "I am currently seeking opportunities to apply my skills and enthusiasm to an IT company in Ukraine or Slovakia.": "I am currently seeking opportunities to apply my skills and enthusiasm to an IT company in Ukraine or Slovakia.",
+    "I am an ambitious front-end developer": "I am an ambitious front-end developer",
+    "seeking my first commercial experience.": "seeking my first commercial experience.",
+    "Besides programming, ": "Besides programming, ",
+    "I am a music enthusiast, ": "I am a music enthusiast, ",
+    "coffee lover, and self-taught guitarist.": "coffee lover, andself-taught guitarist.",
+    "I am currently seeking opportunities ": "I am currently seeking opportunities ",
+    "to apply my skills and enthusiasm to an IT company ": "to apply my skills and enthusiasm to an IT company ",
+    "in Ukraine or Slovakia.": "in Ukraine or Slovakia.",
     "Download CV": "Download CV"
   },
   "skills": {
@@ -28,8 +33,10 @@
   },
   "footer": {
     "Contact": "Contact",
-    "Enjoyed my work? Let’s work together": "Enjoyed my work? Let’s work together",
-    "I’m always up for a chat. Pop me an email at": "I’m always up for a chat. Pop me an email at",
+    "Enjoyed my work?": "Enjoyed my work?",
+    "Let’s work together": "Let’s work together",
+    "I’m always up for a chat.": "I’m always up for a chat.",
+    "Pop me an email at": "Pop me an email at",
     "or give me a shout on social media.": "or give me a shout on social media."
   }
 }
