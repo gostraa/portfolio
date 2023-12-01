@@ -96,7 +96,7 @@ export const Img = styled.img`
 export const InfoWrap = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
   padding: 15px 20px;
   color: var(--text-primary);
   font-size: 18px;
@@ -108,12 +108,11 @@ export const InfoWrap = styled.div`
   @media screen and (min-width: 767.9px) {
     padding: 20px 30px;
     font-size: 18px;
-    gap: 20px;
+    gap: 14px;
   }
 
   @media screen and (min-width: 1024px) {
     font-size: 24px;
-    gap: 24px;
   }
 `;
 export const Primary = styled.p`
