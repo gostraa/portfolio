@@ -19,6 +19,9 @@ export const StyledTitle = styled.h2`
   font-size: 16px;
   line-height: 1;
   margin-bottom: 8px;
+  @media screen and (min-width: 1024px) {
+    font-size: 22px;
+  }
 `;
 
 export const StyledDescr = styled.p`

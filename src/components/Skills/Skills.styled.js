@@ -19,7 +19,7 @@ export const StarSecondSvg = styled(StarSecond)`
 
 export const SkillsSection = styled.div`
   position: relative;
-  padding: 10px 24px 48px;
+  padding: 77px 24px 20px;
   text-align: center;
   max-width: 1440px;
   margin: 0 auto;
