@@ -1,0 +1,42 @@
+{
+  "navMenu": {
+    "About me": "Про мене",
+    "Projects": "Проекти",
+    "Skills": "Мої технічні навички",
+    "My Social Media": "Мої соціальні мережі"
+  },
+  "hero": {
+    "Hi, I'm Mariia": "Вітаю, мене звати Марія",
+    "Front-end developer": "Я Front-end розробник",
+    "I specialize in building web applications": "Я спеціалізуюся на розробці веб-додатків,",
+    "using technologies such as HTML, CSS, JavaScript, React, and Node.js .": "використовуючи технології, такі як HTML, CSS, JavaScript, React та Node.js.",
+    "Download CV": "Завантажити CV"
+  },
+  "aboutMe": {
+    "About me": "Про мене",
+    "I am an ambitious front-end developer": "Я амбіційна Front-end розробниця , ",
+    "seeking my first commercial experience.": "шукаюча свій перший комерційний досвід роботи.",
+    "Besides programming, ": "Окрім програмування, ",
+    "I am a music enthusiast, ": "я цінувачка кави, ",
+    "coffee lover, and self-taught guitarist.": "музики і самостійно вивчила гру на гітарі.",
+    "I am currently seeking opportunities ": "У даний момент шукаю можливості ",
+    "to apply my skills and enthusiasm to an IT company ": "щоб використовувати свої навички і ентузіазм в ІТ-компанії. ",
+    "in Ukraine or Slovakia.": "В Україні чи Словаччині.",
+    "Download CV": "Завантажити CV"
+  },
+  "skills": {
+    "Skills": "Мої технічні навички"
+  },
+  "projects": {
+    "Projects": "Проекти",
+    "Take a look at my highlighted projects": "Ознайомтеся з моїми проектами."
+  },
+  "footer": {
+    "Contact": "Мої контакти",
+    "Enjoyed my work?": "Сподобалася моя робота?",
+    "Let’s work together": "Давайте працювати разом",
+    "I’m always up for a chat.": "Я завжди на зв`язку.",
+    "Pop me an email at": "Напишіть мені листа за адресою:",
+    "or give me a shout on social media.": "або зверніться до мене через соціальні мережі."
+  }
+}
