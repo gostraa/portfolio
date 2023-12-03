@@ -1,8 +1,8 @@
-import minimalImg from "../src/images/projects/minimal.png";
-import cinemaImg from "../src/images/projects/cinema.png";
-import moneyGuardImg from "../src/images/projects/moneyguard.png";
-import carRentImg from "../src/images/projects/carrent.png";
-import englishImg from "../src/images/projects/english.png";
+import minimalImg from "../src/images/projects/minimal.jpg";
+import cinemaImg from "../src/images/projects/cinema.jpg";
+import moneyGuardImg from "../src/images/projects/moneyguard.jpg";
+import carRentImg from "../src/images/projects/carrent.jpg";
+import englishImg from "../src/images/projects/english.jpg";
 const projectsList = [
   {
     name: "MINIMAL",
