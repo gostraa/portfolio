@@ -7,8 +7,10 @@ import { ReactComponent as Close } from "../../svg/X.svg";
 import { Backdrop, Menu, Nav } from "./NavigationMenu.styled";
 
 import { animationSettingsNavigate } from "constants/constants";
+import { useTranslation } from "react-i18next";
 
 const NavigationMenu = ({ toggleNav }) => {
+  const { t } = useTranslation();
   const iconStyle = {
     width: "30px",
     height: "30px",
@@ -49,7 +51,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              About me
+              {t("About me")}
             </Link>
             <Link
               to="projects"
@@ -58,7 +60,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              Projects
+              {t("Projects")}
             </Link>
             <Link
               to="skills"
@@ -67,7 +69,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              Skills
+              {t("Skills")}
             </Link>
             <Link
               to="socialMedia"
@@ -76,7 +78,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              My Social Media
+              {t("My Social Media")}
             </Link>
           </Nav>
         </Menu>

@@ -1,17 +1,13 @@
 {
-  "navMenu": {
-    "About me": "About me",
-    "Projects": "Projects",
-    "Skills": "Skills",
-    "My Social Media": "My Social Media"
-  },
-  "hero": {
-    "Hi, I'm Mariia": "Hi, I'm Mariia",
-    "Front-end developer": "Front-end developer",
-    "I specialize in building web applications": "I specialize in building web applications",
-    "using technologies such as HTML, CSS, JavaScript, React, and Node.js .": "using technologies such as HTML, CSS, JavaScript, React, and Node.js .",
-    "Download CV": "Download CV"
-  },
+  "About me": "About me",
+  "Projects": "Projects",
+  "Skills": "Skills",
+  "My Social Media": "My Social Media",
+  "Hi, I'm Mariia": "Hi, I'm Mariia",
+  "Front-end developer": "Front-end developer",
+  "I specialize in building web applications": "I specialize in building web applications",
+  "using technologies such as HTML, CSS, JavaScript, React, and Node.js .": "using technologies such as HTML, CSS, JavaScript, React, and Node.js .",
+  "Download CV": "Download CV",
   "aboutMe": {
     "About me": "About me",
     "I am an ambitious front-end developer": "I am an ambitious front-end developer",
