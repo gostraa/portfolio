@@ -3,7 +3,7 @@ import cinemaImg from "../src/images/projects/cinema.jpg";
 import moneyGuardImg from "../src/images/projects/moneyguard.jpg";
 import carRentImg from "../src/images/projects/carrent.jpg";
 import englishImg from "../src/images/projects/english.jpg";
-import waterImg from "../src/images/projects/water.jpg";
+import waterImg from "../src/images/projects/water_tracker.jpg";
 const projectsList = [
   {
     name: "MINIMAL",
@@ -75,7 +75,7 @@ const projectsList = [
   {
     name: "Water Tracker",
     date: "Dec 2023",
-    title: "Сontrol your water balance!",
+    title: "Сontrol your water balance every day!",
     description:
       " An aplication where you can monitor the amount of water consumed",
     image: waterImg,
