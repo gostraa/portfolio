@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ReactComponent as GitHub } from "../../svg/logo-github.svg";
 import { ReactComponent as Linkedin } from "../../svg/logo-linkedin.svg";
 import { ReactComponent as Instagram } from "../../svg/logo-instagram.svg";
+import { ReactComponent as Telegram } from "../../svg/telegram-svgrepo-com.svg";
 
 import {
   FooterContainer,
@@ -34,6 +35,15 @@ const Footer = () => {
             or give me a shout on social media.
           </Secondary>
           <SocialList>
+            <li>
+              <SocialLink
+                href="https://t.me/gosstra"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Telegram />
+              </SocialLink>
+            </li>
             <li>
               <SocialLink
                 href="https://github.com/gostraa"
