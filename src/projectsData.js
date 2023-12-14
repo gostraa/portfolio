@@ -3,6 +3,7 @@ import cinemaImg from "../src/images/projects/cinema.jpg";
 import moneyGuardImg from "../src/images/projects/moneyguard.jpg";
 import carRentImg from "../src/images/projects/carrent.jpg";
 import englishImg from "../src/images/projects/english.jpg";
+import waterImg from "../src/images/projects/water.jpg";
 const projectsList = [
   {
     name: "MINIMAL",
@@ -65,10 +66,25 @@ const projectsList = [
       "First experience working on a real project within a cross-functional team.",
     image: englishImg,
 
-    skills: " CSS , HTML , JavaScript , React , CSS-Grid",
+    skills: " CSS , HTML , JavaScript , React , RESTful API , CSS-Grid",
     link: "https://sakhnodima.github.io/Landing_English/",
     role: " Front-end developer",
     workedOn: "  Submission form and My service section",
+  },
+
+  {
+    name: "Water Tracker",
+    date: "Dec 2023",
+    title: "Сontrol your water balance!",
+    description:
+      " An aplication where you can monitor the amount of water consumed",
+    image: waterImg,
+
+    skills: " CSS , HTML , JavaScript , React , RESTful API",
+    link: "https://yurii2007.github.io/water-tracker/",
+    role: " Front-end developer",
+    workedOn:
+      "  Settings (modal and form), Today list of portions of water per day also helped in creating a calendar (a pop-up window with information for a specific day) ",
   },
 ];
 
