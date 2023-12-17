@@ -151,7 +151,5 @@ export const skillsArr = [
   "Redux-toolkit",
   "Styled Components",
   "REST API",
-  "Node.js",
-  "MongoDB",
   "GIT",
 ];
