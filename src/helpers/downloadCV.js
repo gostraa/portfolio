@@ -1,7 +1,6 @@
 export const handleDownloadCV = () => {
   const pdfPath =
-    process.env.PUBLIC_URL +
-    "/1982264Сherkashyna_Mariia_FRONT-END_DEVELOPER.pdf";
+    process.env.PUBLIC_URL + "/Сherkashyna_Mariia_FRONT-END_DEVELOPER.pdf.pdf";
   const link = document.createElement("a");
   link.href = pdfPath;
 
