@@ -5,7 +5,7 @@ export const BurgerSvg = styled(MenuBtnIcon)`
   cursor: pointer;
 `;
 
-export const StyledHeader = styled.div`
+export const StyledHeader = styled.section`
   display: flex;
   justify-content: flex-end;
   align-items: center;

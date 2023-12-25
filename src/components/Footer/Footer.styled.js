@@ -16,7 +16,7 @@ export const MyAvatar = styled(Avatar)`
   }
 `;
 
-export const FooterSection = styled.div`
+export const FooterSection = styled.section`
   max-width: 1440px;
   margin: 0 auto;
   padding: 50px 24px 38px 24px;
