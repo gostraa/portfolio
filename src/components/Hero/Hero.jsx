@@ -22,7 +22,7 @@ const Hero = () => {
         <StyledTitle>{t("Hi, I'm Mariia")}</StyledTitle>
         <StyledI>{t("Front-end developer")}</StyledI>
         <StyledAbout>
-          {t("I specialize in building web applications")}
+          {t("I specialize in building web applications ")}
           {t(
             "using technologies such as HTML, CSS, JavaScript, React, and Node.js ."
           )}
