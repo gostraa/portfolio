@@ -69,7 +69,7 @@ const projectsList = [
     skills: " CSS , HTML , JavaScript , React , RESTful API , CSS-Grid",
     link: "https://sakhnodima.github.io/Landing_English/",
     role: " Front-end developer",
-    workedOn: "  Submission form and My service section",
+    workedOn: " letter submission form and My service section",
   },
 
   {
