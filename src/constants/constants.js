@@ -145,6 +145,7 @@ export const skillsArr = [
   "CSS-Grid",
   "Responsive/Adaptive Design",
   "JavaScript",
+  "TypeScript",
   "React",
   "Redux",
   "Redux-toolkit",
