@@ -1,6 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-scroll";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 import NavigationMenu from "components/NavigationMenu/NavigationMenu";
 import { Nav } from "components/NavigationMenu/NavigationMenu.styled";
@@ -24,7 +25,10 @@ const Header = () => {
 
   return (
     <>
-      {isOpenMenu && <NavigationMenu toggleNav={toggleNav} />}
+      <AnimatePresence>
+        {isOpenMenu && <NavigationMenu toggleNav={toggleNav} />}
+      </AnimatePresence>
+
       <StyledHeader>
         {!isDesktop ? (
           <BurgerSvg onClick={toggleNav} />

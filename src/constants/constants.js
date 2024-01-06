@@ -63,21 +63,20 @@ export const animationSettingsModal = {
 // navigation menu
 
 export const NavigateVariants = {
-  visible: (width = 1000) => ({
-    clipPath: `circle(${width * 2 + 200}px at calc(100% - 40px) 40px)`,
+  visible: (width = 1200) => ({
+    clipPath: `circle(${width}px at calc(100% - 40px) 40px)`,
     transition: {
       type: "spring",
-      stiffness: 20,
+      stiffness: 30,
       restDelta: 2,
     },
   }),
   hidden: {
-    clipPath: "circle(30px at calc(100% - 40px) 40px)",
+    clipPath: "circle(20px at calc(100% - 35px) 40px)",
     transition: {
-      delay: 0.5,
       type: "spring",
       stiffness: 400,
-      damping: 140,
+      damping: 50,
     },
   },
 };
@@ -126,7 +125,13 @@ export const settings = {
 
 // styles for header links
 
-const linkStyle = {
+export const linkStyle = {
+  cursor: "pointer",
+};
+
+export const iconStyles = {
+  width: "30px",
+  height: "30px",
   cursor: "pointer",
 };
 

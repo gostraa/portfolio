@@ -6,19 +6,16 @@ import { ReactComponent as Close } from "../../svg/X.svg";
 
 import { Backdrop, Menu, Nav } from "./NavigationMenu.styled";
 
-import { animationSettingsNavigate } from "constants/constants";
+import {
+  animationSettingsNavigate,
+  linkStyle,
+  iconStyles,
+} from "constants/constants";
 import { useTranslation } from "react-i18next";
 
 const NavigationMenu = ({ toggleNav }) => {
   const { t } = useTranslation();
-  const iconStyle = {
-    width: "30px",
-    height: "30px",
-  };
 
-  const linkStyle = {
-    cursor: "pointer",
-  };
   useEffect(() => {
     document.body.style.overflow = "hidden";
     const handleKeyDown = (e) => {
@@ -39,10 +36,14 @@ const NavigationMenu = ({ toggleNav }) => {
     }
   };
   return (
-    <AnimatePresence>
-      <Backdrop onClick={handleBackdropClick} key="unique-key2">
-        <Menu {...animationSettingsNavigate} key="unique-key">
-          <Close onClick={toggleNav} style={{ ...iconStyle }} />
+    <Backdrop
+      {...animationSettingsNavigate}
+      onClick={handleBackdropClick}
+      key="unique-key2"
+    >
+      <AnimatePresence>
+        <Menu key="unique-key">
+          <Close onClick={toggleNav} style={{ ...iconStyles }} />
           <Nav>
             <Link
               to="about"
@@ -82,8 +83,8 @@ const NavigationMenu = ({ toggleNav }) => {
             </Link>
           </Nav>
         </Menu>
-      </Backdrop>
-    </AnimatePresence>
+      </AnimatePresence>
+    </Backdrop>
   );
 };
 
