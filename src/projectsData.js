@@ -4,10 +4,11 @@ import moneyGuardImg from "../src/images/projects/moneyguard.jpg";
 import carRentImg from "../src/images/projects/carrent.jpg";
 import englishImg from "../src/images/projects/english.jpg";
 import waterImg from "../src/images/projects/water_tracker.jpg";
+import manicuristImg from "../src/images/projects/manicurist.jpg";
 const projectsList = [
   {
     name: "MINIMAL",
-    date: "Jan 2023",
+    date: "Jul 2023",
     title: " A minimalistic website for a furniture store",
     description:
       " My first experience of working in a team.Landing page for a furniture store with minimalist animation.",
@@ -85,6 +86,20 @@ const projectsList = [
     role: " Front-end developer",
     workedOn:
       "  Settings (modal and form), Today list of portions of water per day also helped in creating a calendar (a pop-up window with information for a specific day) ",
+  },
+  {
+    name: "Jully Nails",
+    date: "Jan 2024",
+    title: " A website for a nail service master",
+    description: " Business website for a manicurist.",
+    image: manicuristImg,
+
+    skills:
+      " CSS , HTML , Adaptive Web Desing, JavaScript , React , Framer-motion , Simple lightBox ,react-slick , i18n",
+    link: "https://gostraa.github.io/Jully_Nails/",
+    role: " Front-end developer",
+    workedOn:
+      " Hero , Manicure , Nail shapes , Diplomas , Reviews sections and Preload component",
   },
 ];
 
