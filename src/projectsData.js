@@ -96,7 +96,7 @@ const projectsList = [
 
     skills:
       " CSS , HTML , Adaptive Web Desing, JavaScript , React , Framer-motion , Simple lightBox ,react-slick , i18n",
-    link: "https://gostraa.github.io/Jully_Nails/",
+    link: "https://jully-nails.com/",
     role: " Front-end developer",
     workedOn:
       " Hero , Manicure , Nail shapes , Diplomas , Reviews sections and Preload component",
