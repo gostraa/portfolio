@@ -47,10 +47,13 @@ const AboutMe = () => {
               experience.
             </StyledGeneralP>
             <StyledSecondaryP>
-              Besides programming, I am a music enthusiast, coffee lover, and
-              self-taught guitarist. I am currently seeking opportunities to
-              apply my skills and enthusiasm to an IT company in Ukraine or
-              Slovakia.
+              Besides programming, I am a music enthusiast, coffee lover, and a
+              self-taught guitarist. I relish diving into studies for an entire
+              day, losing track of time. I have recently completed a full-stack
+              bootcamp course successfully, significantly broadening my
+              knowledge and skills in development. I am currently seeking
+              opportunities to apply my skills and enthusiasm to an IT company
+              in Ukraine or Slovakia.
             </StyledSecondaryP>
             <Button
               type="primary"
