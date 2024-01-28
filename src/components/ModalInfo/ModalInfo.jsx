@@ -18,7 +18,6 @@ import {
 import { animationSettingsModal } from "constants/constants";
 
 const ModalInfo = ({ onClose, currentProject }) => {
-  console.log(currentProject.name);
   const modal = document.querySelector("#modal");
 
   useEffect(() => {

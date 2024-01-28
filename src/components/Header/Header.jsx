@@ -9,10 +9,7 @@ import { BurgerSvg, StyledHeader } from "./Header.styled";
 
 import { linkSettings } from "constants/constants";
 
-import { useTranslation } from "react-i18next";
-
 const Header = () => {
-  const { t } = useTranslation();
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const isDesktop = useMediaQuery({
@@ -35,17 +32,17 @@ const Header = () => {
         ) : (
           <Nav>
             <Link to="about" {...linkSettings}>
-              {t("About me")}
+              About me
             </Link>
 
             <Link to="skills" {...linkSettings}>
-              {t("Skills")}
+              Skills
             </Link>
             <Link to="projects" {...linkSettings}>
-              {t("Projects")}
+              Projects
             </Link>
             <Link to="socialMedia" {...linkSettings}>
-              {t("My Social Media")}
+              My Social Media
             </Link>
           </Nav>
         )}

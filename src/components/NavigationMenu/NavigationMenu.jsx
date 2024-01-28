@@ -11,11 +11,8 @@ import {
   linkStyle,
   iconStyles,
 } from "constants/constants";
-import { useTranslation } from "react-i18next";
 
 const NavigationMenu = ({ toggleNav }) => {
-  const { t } = useTranslation();
-
   useEffect(() => {
     document.body.style.overflow = "hidden";
     const handleKeyDown = (e) => {
@@ -52,7 +49,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              {t("About me")}
+              About me
             </Link>
             <Link
               to="projects"
@@ -61,7 +58,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              {t("Projects")}
+              Projects
             </Link>
             <Link
               to="skills"
@@ -70,7 +67,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              {t("Skills")}
+              Skills
             </Link>
             <Link
               to="socialMedia"
@@ -79,7 +76,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              {t("My Social Media")}
+              My Social Media
             </Link>
           </Nav>
         </Menu>

@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import { ReactComponent as CVSvg } from "../../svg/ReadCvLogo.svg";
 
 import {
@@ -14,24 +13,21 @@ import Button from "components/Button/Button";
 import { handleDownloadCV } from "helpers/downloadCV";
 
 const Hero = () => {
-  const { t } = useTranslation();
   return (
     <StyledHeroWrapper>
       <Typing />
       <div>
-        <StyledTitle>{t("Hi, I'm Mariia")}</StyledTitle>
-        <StyledI>{t("Front-end developer")}</StyledI>
+        <StyledTitle>Hi, I'm Mariia</StyledTitle>
+        <StyledI>Front-end developer</StyledI>
         <StyledAbout>
-          {t("I specialize in building web applications ")}
-          {t(
-            "using technologies such as HTML, CSS, JavaScript, React, and Node.js ."
-          )}
+          I specialize in building web applications using technologies such as
+          HTML, CSS, JavaScript, React, and Node.js .
         </StyledAbout>
         <LinksWrapper>
           <Button
             type="primary"
             isInHero={true}
-            text={t("Download CV")}
+            text={"Download CV"}
             is={"button"}
             onClick={handleDownloadCV}
           >
