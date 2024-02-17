@@ -43,16 +43,17 @@ const AboutMe = () => {
 
             <StyledAboutTitle>About me</StyledAboutTitle>
             <StyledGeneralP>
-              I am an ambitious front-end developer seeking my first commercial
-              experience.
+              I am a goal-oriented front-end developer who has recently embarked
+              on a journey in commercial development with Leo•Source.
             </StyledGeneralP>
             <StyledSecondaryP>
-              Besides programming, I am a music enthusiast, coffee lover, and a
-              self-taught guitarist. I relish diving into studies for an entire
-              day, losing track of time. I have recently completed a full-stack
-              bootcamp course successfully, significantly broadening my
-              knowledge and skills in development. I am currently seeking
-              opportunities to apply my skills and enthusiasm to an IT company
+              My passion for programming is in harmony with my love for music,
+              as well as my self-taught guitar skills. I value the ability to
+              dive into studies for entire days, losing track of time. Having
+              completed a full-stack development course, I have significantly
+              expanded my horizons and skills in development. I am now
+              enthusiastically applying and enhancing my knowledge and skills in
+              a dynamic IT environment.y skills and enthusiasm to an IT company
               in Ukraine or Slovakia.
             </StyledSecondaryP>
             <Button
