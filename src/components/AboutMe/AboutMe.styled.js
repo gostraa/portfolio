@@ -16,6 +16,11 @@ export const Girl = styled(DevGrlSvg)`
   }
 `;
 
+export const LinkLeo = styled.a`
+  color: #7dffaf;
+  text-decoration: underline;
+`;
+
 export const StyledAboutSection = styled.section`
   max-width: 1440px;
   margin: 0 auto;

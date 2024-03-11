@@ -12,6 +12,7 @@ import {
   ArrowWrapper,
   Girl,
   InfoWrapAbout,
+  LinkLeo,
   StyledAboutSection,
   StyledAboutTitle,
   StyledAboutWrapper,
@@ -44,7 +45,11 @@ const AboutMe = () => {
             <StyledAboutTitle>About me</StyledAboutTitle>
             <StyledGeneralP>
               I am a goal-oriented front-end developer who has recently embarked
-              on a journey in commercial development with Leo•Source.
+              on a journey in commercial development with{" "}
+              <LinkLeo href="https://www.upwork.com/agencies/leosource/">
+                Leo•Source
+              </LinkLeo>
+              .
             </StyledGeneralP>
             <StyledSecondaryP>
               My passion for programming is in harmony with my love for music,
@@ -53,8 +58,7 @@ const AboutMe = () => {
               completed a full-stack development course, I have significantly
               expanded my horizons and skills in development. I am now
               enthusiastically applying and enhancing my knowledge and skills in
-              a dynamic IT environment.y skills and enthusiasm to an IT company
-              in Ukraine or Slovakia.
+              a dynamic IT environment.
             </StyledSecondaryP>
             <Button
               type="primary"
