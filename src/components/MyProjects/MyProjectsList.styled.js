@@ -26,6 +26,11 @@ export const StyledItem = styled.li`
     padding: 24px;
   }
 
+  img {
+    min-height: 156px;
+    width: 310px;
+  }
+
   h3 {
     color: var(--text-primary);
     font-family: Kalam, sans-serif;
@@ -74,6 +79,11 @@ export const StyledSlideItem = styled.div`
   }
 
   padding: 24px;
+  img {
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+  }
 
   h3 {
     color: var(--text-primary);

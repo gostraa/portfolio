@@ -5,11 +5,13 @@ import carRentImg from "../src/images/projects/carrent.jpg";
 import englishImg from "../src/images/projects/english.jpg";
 import waterImg from "../src/images/projects/water_tracker.jpg";
 import manicuristImg from "../src/images/projects/manicurist.jpg";
+import sportingImg from "../src/images/projects/sporting.jpg";
+
 const projectsList = [
   {
     name: "MINIMAL",
     date: "Jul 2023",
-    title: " A minimalistic website for a furniture store",
+    title: " The minimalistic website for a furniture store",
     description:
       " My first experience of working in a team.Landing page for a furniture store with minimalist animation.",
     image: minimalImg,
@@ -25,7 +27,7 @@ const projectsList = [
     date: "Aug 2023",
     title: " Let's make your own cinema!",
     description:
-      " A website where you can explore all movies and their trailers",
+      " The website where you can explore all movies and their trailers",
     image: cinemaImg,
 
     skills: " CSS , HTML , JavaScript",
@@ -78,7 +80,7 @@ const projectsList = [
     date: "Dec 2023",
     title: "Сontrol your water balance every day!",
     description:
-      " An aplication where you can monitor the amount of water consumed",
+      " The aplication where you can monitor the amount of water consumed",
     image: waterImg,
 
     skills: " CSS , HTML , JavaScript , React , RESTful API",
@@ -100,6 +102,19 @@ const projectsList = [
     role: " Front-end developer",
     workedOn:
       " Hero , Manicure , Nail shapes , Diplomas , Reviews sections and Preload component",
+  },
+  {
+    name: "Market App",
+    date: "Jun 2024",
+    title: " Sporting goods store - a demo project.",
+    description:
+      " The minimalistic app implementing an online store.The database was created using NestJS.",
+    image: sportingImg,
+
+    skills: " Next.js, NestJS, Tailwind CSS, Framer-motion",
+    link: "https://next-js-market-app.vercel.app/",
+    role: " Full-stack developer",
+    workedOn: " My own project",
   },
 ];
 

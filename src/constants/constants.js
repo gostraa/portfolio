@@ -153,10 +153,11 @@ export const skillsArr = [
   "TypeScript",
   "React",
   "Redux",
-  "Redux-toolkit",
+  "Redux Toolkit",
+  "Next.js",
   "Styled Components",
   "Framer Motion",
   "i18n",
   "REST API",
-  "GIT",
+  "NestJS",
 ];

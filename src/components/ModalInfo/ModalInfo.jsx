@@ -61,7 +61,7 @@ const ModalInfo = ({ onClose, currentProject }) => {
             <p>I worked on : {currentProject.workedOn}</p>
             <Primary>Take a look at this project</Primary>
             <Button
-              text={"GitHub Pages"}
+              text={"Go To The Live Page"}
               type={"primary"}
               link={currentProject.link}
               is={"link"}
