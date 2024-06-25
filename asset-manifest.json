@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bc95a396.css",
-    "main.js": "/portfolio/static/js/main.75a06dcf.js",
+    "main.js": "/portfolio/static/js/main.01d366de.js",
     "static/media/carrent.jpg": "/portfolio/static/media/carrent.456e7c678ba6e228915f.jpg",
     "static/media/cinema.jpg": "/portfolio/static/media/cinema.d8ad0e1beb07797787b6.jpg",
     "static/media/minimal.jpg": "/portfolio/static/media/minimal.aadaeebd124847b7f8f2.jpg",
     "static/media/bro.svg": "/portfolio/static/media/bro.3b1e911b5166afdde0251791f1e7c179.svg",
     "static/media/water_tracker.jpg": "/portfolio/static/media/water_tracker.0a520bf083fb9652a78e.jpg",
+    "static/media/sporting.jpg": "/portfolio/static/media/sporting.bcb66b0f0188455c9540.jpg",
     "static/media/manicurist.jpg": "/portfolio/static/media/manicurist.37df6e739276623db0f1.jpg",
     "static/media/english.jpg": "/portfolio/static/media/english.08b5dddf29fb4b1f1ca1.jpg",
     "static/media/moneyguard.jpg": "/portfolio/static/media/moneyguard.97bbddb06fb7e4023981.jpg",
@@ -34,10 +35,10 @@
     "static/media/icons8-html.svg": "/portfolio/static/media/icons8-html.b98789e6edeff0ce1cb937770ce0c9e4.svg",
     "static/media/icons8-css3.svg": "/portfolio/static/media/icons8-css3.2091a264f50c6250775a0117a4505b2a.svg",
     "main.bc95a396.css.map": "/portfolio/static/css/main.bc95a396.css.map",
-    "main.75a06dcf.js.map": "/portfolio/static/js/main.75a06dcf.js.map"
+    "main.01d366de.js.map": "/portfolio/static/js/main.01d366de.js.map"
   },
   "entrypoints": [
     "static/css/main.bc95a396.css",
-    "static/js/main.75a06dcf.js"
+    "static/js/main.01d366de.js"
   ]
 }
