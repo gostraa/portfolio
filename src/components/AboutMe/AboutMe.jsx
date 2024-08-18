@@ -54,9 +54,7 @@ const AboutMe = () => {
             <StyledSecondaryP>
               My passion for programming is in harmony with my love for music,
               as well as my self-taught guitar skills. I value the ability to
-              dive into studies for entire days, losing track of time. Having
-              completed a full-stack development course, I have significantly
-              expanded my horizons and skills in development. I am now
+              dive into studies for entire days, losing track of time. I am now
               enthusiastically applying and enhancing my knowledge and skills in
               a dynamic IT environment.
             </StyledSecondaryP>
