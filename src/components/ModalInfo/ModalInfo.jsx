@@ -15,7 +15,7 @@ import {
   SvgWrap,
 } from "./ModalInfo.styled";
 
-import { animationSettingsModal } from "constants/constants";
+import { animationSettingsModal, projectImages } from "constants/constants";
 
 const ModalInfo = ({ onClose, currentProject }) => {
   const modal = document.querySelector("#modal");
@@ -48,7 +48,10 @@ const ModalInfo = ({ onClose, currentProject }) => {
             <ArrowLeftSvg />
           </SvgWrap>
           <ImgWrapper>
-            <Img src={currentProject.image} alt={currentProject.name} />
+            <Img
+              src={projectImages[currentProject.image]}
+              alt={currentProject.name}
+            />
           </ImgWrapper>
           <InfoWrap>
             <p>{currentProject.date}</p>
