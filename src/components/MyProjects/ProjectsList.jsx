@@ -14,7 +14,7 @@ import {
 } from "./MyProjectsList.styled";
 
 import ModalInfo from "components/ModalInfo/ModalInfo";
-import { settings } from "constants/constants";
+import { projectImages, settings } from "constants/constants";
 
 const ProjectsList = ({ projectsList }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 767.9px)" });
@@ -41,9 +41,7 @@ const ProjectsList = ({ projectsList }) => {
               key={project.name}
             >
               <img src={project.image} alt={project.name} />
-
               <StyledDate>{project.date}</StyledDate>
-
               <h3>{project.name}</h3>
               <StyledTitleDescr>{project.title}</StyledTitleDescr>
             </StyledItem>
@@ -56,10 +54,11 @@ const ProjectsList = ({ projectsList }) => {
               onClick={() => handleOpenModal(project.name)}
               key={project.name}
             >
-              <StyledProImg src={project.image} alt={project.name} />
-
+              <StyledProImg
+                src={projectImages[project.image]}
+                alt={project.name}
+              />
               <StyledDate>{project.date}</StyledDate>
-
               <h3>{project.name}</h3>
               <StyledTitleDescr>{project.title}</StyledTitleDescr>
             </StyledSlideItem>

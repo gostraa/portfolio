@@ -44,12 +44,12 @@ const AboutMe = () => {
 
             <StyledAboutTitle>About me</StyledAboutTitle>
             <StyledGeneralP>
-              I am a goal-oriented front-end developer who has recently embarked
-              on a journey in commercial development with{" "}
+              Currently, I am collaborating with{" "}
               <LinkLeo href="https://www.upwork.com/agencies/leosource/">
                 Leo•Source
-              </LinkLeo>
-              .
+              </LinkLeo>{" "}
+              , where I apply my skills and expertise to drive impactful
+              solutions in commercial development.
             </StyledGeneralP>
             <StyledSecondaryP>
               My passion for programming is in harmony with my love for music,

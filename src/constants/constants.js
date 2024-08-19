@@ -1,3 +1,12 @@
+import minimalImg from "../images/projects/minimal.jpg";
+import cinemaImg from "../images/projects/cinema.jpg";
+import moneyGuardImg from "../images/projects/moneyguard.jpg";
+import carRentImg from "../images/projects/carrent.jpg";
+import englishImg from "../images/projects/english.jpg";
+import waterImg from "../images/projects/water_tracker.jpg";
+import manicuristImg from "../images/projects/manicurist.jpg";
+import sportingImg from "../images/projects/sporting.jpg";
+
 //footer
 
 const defaultAnimation = {
@@ -96,8 +105,8 @@ export const animationSettingsNavigate = {
 //settings for project list
 export const settings = {
   dots: false,
-  infinite: false,
-  speed: 400,
+  infinite: true,
+  speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
   initialSlide: 0,
@@ -107,7 +116,7 @@ export const settings = {
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: false,
+        infinite: true,
         dots: false,
       },
     },
@@ -116,7 +125,7 @@ export const settings = {
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-        infinite: false,
+        infinite: true,
         dots: false,
       },
     },
@@ -164,3 +173,13 @@ export const skillsArr = [
   "i18n",
   "Plasmo",
 ];
+export const projectImages = {
+  "/images/projects/minimal.jpg": minimalImg,
+  "/images/projects/cinema.jpg": cinemaImg,
+  "/images/projects/moneyguard.jpg": moneyGuardImg,
+  "/images/projects/carrent.jpg": carRentImg,
+  "/images/projects/english.jpg": englishImg,
+  "/images/projects/water_tracker.jpg": waterImg,
+  "/images/projects/manicurist.jpg": manicuristImg,
+  "/images/projects/sporting.jpg": sportingImg,
+};
