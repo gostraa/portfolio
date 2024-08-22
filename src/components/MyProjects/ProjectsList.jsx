@@ -40,7 +40,7 @@ const ProjectsList = ({ projectsList }) => {
               onClick={() => handleOpenModal(project.name)}
               key={project.name}
             >
-              <img src={project.image} alt={project.name} />
+              <img src={projectImages[project.image]} alt={project.name} />
               <StyledDate>{project.date}</StyledDate>
               <h3>{project.name}</h3>
               <StyledTitleDescr>{project.title}</StyledTitleDescr>
