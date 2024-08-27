@@ -54,9 +54,7 @@ const AboutMe = () => {
             <StyledSecondaryP>
               My passion for programming is in harmony with my love for music,
               as well as my self-taught guitar skills. I value the ability to
-              dive into studies for entire days, losing track of time. I am now
-              enthusiastically applying and enhancing my knowledge and skills in
-              a dynamic IT environment.
+              dive into studies for entire days, losing track of time.
             </StyledSecondaryP>
             <Button
               type="primary"

@@ -21,7 +21,7 @@ const Hero = () => {
         <StyledI>Front-end developer</StyledI>
         <StyledAbout>
           I specialize in building web applications using technologies such as
-          HTML, CSS, JavaScript, React, and Node.js .
+          HTML, CSS, JavaScript, React, Next.js and Node.js
         </StyledAbout>
         <LinksWrapper>
           <Button

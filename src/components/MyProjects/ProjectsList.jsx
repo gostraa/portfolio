@@ -3,18 +3,12 @@ import { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import {
-  StyledDate,
-  StyledItem,
-  StyledListProject,
-  StyledProImg,
-  StyledSlideItem,
-  StyledSlideList,
-  StyledTitleDescr,
-} from "./MyProjectsList.styled";
+import { StyledListProject, StyledSlideList } from "./MyProjectsList.styled";
 
 import ModalInfo from "components/ModalInfo/ModalInfo";
-import { projectImages, settings } from "constants/constants";
+import { settings } from "constants/constants";
+import SlideItem from "./SlideItem";
+import ProjectItem from "./ProjectItem";
 
 const ProjectsList = ({ projectsList }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 767.9px)" });
@@ -36,32 +30,13 @@ const ProjectsList = ({ projectsList }) => {
       {isMobile ? (
         <StyledListProject>
           {projectsList.map((project) => (
-            <StyledItem
-              onClick={() => handleOpenModal(project.name)}
-              key={project.name}
-            >
-              <img src={projectImages[project.image]} alt={project.name} />
-              <StyledDate>{project.date}</StyledDate>
-              <h3>{project.name}</h3>
-              <StyledTitleDescr>{project.title}</StyledTitleDescr>
-            </StyledItem>
+            <ProjectItem project={project} handleOpenModal={handleOpenModal} />
           ))}
         </StyledListProject>
       ) : (
         <StyledSlideList {...settings}>
           {projectsList.map((project) => (
-            <StyledSlideItem
-              onClick={() => handleOpenModal(project.name)}
-              key={project.name}
-            >
-              <StyledProImg
-                src={projectImages[project.image]}
-                alt={project.name}
-              />
-              <StyledDate>{project.date}</StyledDate>
-              <h3>{project.name}</h3>
-              <StyledTitleDescr>{project.title}</StyledTitleDescr>
-            </StyledSlideItem>
+            <SlideItem project={project} handleOpenModal={handleOpenModal} />
           ))}
         </StyledSlideList>
       )}
