@@ -64,15 +64,12 @@ const Hero = () => {
           </LinksWrapper>
         </div>
       </StyledHeroWrapper>
-      {/* <div ref={hint}> */}
+
       <StyledScrollDown ref={hint}>
         SCROLL DOWN TO EXPLORE MORE
       </StyledScrollDown>
-      {/* </div> */}
     </>
   );
 };
 
 export default Hero;
-//#7DFFAF
-// boxShadow: "0px 0px 48px 0px rgba(125, 255, 175, 0.24)";

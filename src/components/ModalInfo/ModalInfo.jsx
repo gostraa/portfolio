@@ -34,6 +34,7 @@ const ModalInfo = ({ onClose, currentProject }) => {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [onClose]);
+
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {
       onClose();

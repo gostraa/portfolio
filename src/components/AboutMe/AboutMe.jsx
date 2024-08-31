@@ -22,76 +22,16 @@ import {
 } from "./AboutMe.styled";
 
 import { handleDownloadCV } from "helpers/downloadCV";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import gsap from "gsap";
+
 import { useRef } from "react";
-import { getScrollTriggerSettings } from "helpers/getScrollTrigerSettings";
+import { useGSAPAnimations } from "hooks/useGSAPAnimation";
 
 const AboutMe = () => {
-  gsap.registerPlugin(ScrollTrigger, useGSAP);
-
   const container = useRef();
   const arrow = useRef();
   const svgContainer = useRef();
-  const svgs = useRef([]);
 
-  useGSAP(() => {
-    const { start, end } = getScrollTriggerSettings();
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: container.current,
-        start,
-        end,
-        scrub: false,
-        once: true,
-      },
-      onComplete: () => {
-        svgContainer.current.style.opacity = 1;
-
-        svgs.current = svgContainer.current.querySelectorAll(".svg");
-
-        let delay = 0;
-        svgs.current.forEach((elem) => {
-          delay += 0.1;
-          gsap.fromTo(
-            elem,
-            {
-              y: "100%",
-              opacity: 0,
-            },
-            {
-              y: 0,
-              opacity: 1,
-              delay,
-              ease: "bounce.out",
-            }
-          );
-        });
-      },
-    });
-
-    tl.fromTo(
-      container.current,
-      { x: "-100%", opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "circ.out",
-      }
-    ).fromTo(
-      arrow.current,
-      { y: "100%", x: "-100%", opacity: 0 },
-      {
-        y: 0,
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "bounce.out",
-      }
-    );
-  });
+  useGSAPAnimations(container, arrow, svgContainer);
 
   return (
     <div ref={container}>

@@ -30,13 +30,21 @@ const ProjectsList = ({ projectsList }) => {
       {isMobile ? (
         <StyledListProject>
           {projectsList.map((project) => (
-            <ProjectItem project={project} handleOpenModal={handleOpenModal} />
+            <ProjectItem
+              key={project.name}
+              project={project}
+              handleOpenModal={handleOpenModal}
+            />
           ))}
         </StyledListProject>
       ) : (
         <StyledSlideList {...settings}>
           {projectsList.map((project) => (
-            <SlideItem project={project} handleOpenModal={handleOpenModal} />
+            <SlideItem
+              key={project.name}
+              project={project}
+              handleOpenModal={handleOpenModal}
+            />
           ))}
         </StyledSlideList>
       )}
