@@ -22,24 +22,93 @@ import {
 } from "./AboutMe.styled";
 
 import { handleDownloadCV } from "helpers/downloadCV";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import { useRef } from "react";
+import { getScrollTriggerSettings } from "helpers/getScrollTrigerSettings";
 
 const AboutMe = () => {
+  gsap.registerPlugin(ScrollTrigger, useGSAP);
+
+  const container = useRef();
+  const arrow = useRef();
+  const svgContainer = useRef();
+  const svgs = useRef([]);
+
+  useGSAP(() => {
+    const { start, end } = getScrollTriggerSettings();
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container.current,
+        start,
+        end,
+        scrub: false,
+        once: true,
+      },
+      onComplete: () => {
+        svgContainer.current.style.opacity = 1;
+
+        svgs.current = svgContainer.current.querySelectorAll(".svg");
+
+        let delay = 0;
+        svgs.current.forEach((elem) => {
+          delay += 0.1;
+          gsap.fromTo(
+            elem,
+            {
+              y: "100%",
+              opacity: 0,
+            },
+            {
+              y: 0,
+              opacity: 1,
+              delay,
+              ease: "bounce.out",
+            }
+          );
+        });
+      },
+    });
+
+    tl.fromTo(
+      container.current,
+      { x: "-100%", opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "circ.out",
+      }
+    ).fromTo(
+      arrow.current,
+      { y: "100%", x: "-100%", opacity: 0 },
+      {
+        y: 0,
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "bounce.out",
+      }
+    );
+  });
+
   return (
-    <>
-      <StyledAboutSection id="about">
+    <div ref={container}>
+      <StyledAboutSection id="about" className="section">
         <ArrowWrapper>
-          <ArrowSvg />
+          <ArrowSvg className="arrow" ref={arrow} />
         </ArrowWrapper>
 
         <StyledAboutWrapper>
           <Girl />
           <InfoWrapAbout>
-            <SvgWrapper>
-              <HTMLSvg />
-              <CSSSvg />
-              <JSSvg />
-              <ReactSvg />
-              <NodeSvg />
+            <SvgWrapper ref={svgContainer} style={{ opacity: 0 }}>
+              <HTMLSvg className="svg" />
+              <CSSSvg className="svg" />
+              <JSSvg className="svg" />
+              <ReactSvg className="svg" />
+              <NodeSvg className="svg" />
             </SvgWrapper>
 
             <StyledAboutTitle>About me</StyledAboutTitle>
@@ -68,7 +137,7 @@ const AboutMe = () => {
           </InfoWrapAbout>
         </StyledAboutWrapper>
       </StyledAboutSection>
-    </>
+    </div>
   );
 };
 

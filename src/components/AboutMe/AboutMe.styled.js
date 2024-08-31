@@ -25,7 +25,7 @@ export const StyledAboutSection = styled.section`
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  padding: 70px 24px 38px 24px;
+  padding: 90px 24px 50px 24px;
 `;
 
 export const ArrowWrapper = styled.div`
@@ -33,6 +33,16 @@ export const ArrowWrapper = styled.div`
   right: 80px;
   top: 25px;
   transform: rotateZ(145deg);
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    left: 40%;
+    top: 0%;
+    & svg {
+      width: 150px;
+      height: 150px;
+    }
+  }
 
   @media screen and (min-width: 1024px) {
     width: 200px;
