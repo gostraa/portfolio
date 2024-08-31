@@ -66,7 +66,7 @@ const Hero = () => {
       </StyledHeroWrapper>
 
       <StyledScrollDown ref={hint}>
-        SCROLL DOWN TO EXPLORE MORE
+        SCROLL DOWN TO FIND OUT MORE
       </StyledScrollDown>
     </>
   );
