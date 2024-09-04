@@ -104,7 +104,7 @@ export const StyledGeneralP = styled.p`
   font-weight: 500;
   line-height: 1.3;
   margin-bottom: 16px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
     font-size: 28px;
   }
 `;

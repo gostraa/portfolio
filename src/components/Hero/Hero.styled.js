@@ -78,7 +78,7 @@ export const LinksWrapper = styled.div`
 export const StyledScrollDown = styled.p`
   color: #7dffaf;
   font-family: Kalam, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   width: 300px;
   margin: 0 auto;
   padding: 50px 10px;
