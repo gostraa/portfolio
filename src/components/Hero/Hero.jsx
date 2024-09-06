@@ -10,6 +10,7 @@ import {
   StyledSnake,
   StyledTitle,
   Typing,
+  Wrapper,
 } from "./Hero.styled";
 
 import Button from "components/Button/Button";
@@ -21,7 +22,7 @@ const Hero = () => {
   useGSAPAnimations(hint);
 
   return (
-    <div>
+    <>
       <StyledHeroWrapper>
         <Typing />
         <div>
@@ -39,11 +40,13 @@ const Hero = () => {
         </div>
       </StyledHeroWrapper>
 
-      <StyledScrollDown ref={hint}>
-        SCROLL DOWN TO FIND OUT MORE
-      </StyledScrollDown>
-      <StyledSnake />
-    </div>
+      <Wrapper>
+        <StyledScrollDown ref={hint}>
+          SCROLL DOWN TO FIND OUT MORE
+        </StyledScrollDown>
+        <StyledSnake />
+      </Wrapper>
+    </>
   );
 };
 

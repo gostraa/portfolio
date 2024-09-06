@@ -18,18 +18,17 @@ export const Typing = styled(TypingSvg)`
   }
 `;
 
+export const Wrapper = styled.div`
+  position: relative;
+`;
 export const StyledSnake = styled(Snake)`
   display: none;
 
   @media screen and (min-width: 768px) {
     display: inline-block;
     position: absolute;
-    bottom: -25%;
+    bottom: -70%;
     z-index: -3;
-  }
-
-  @media screen and (min-width: 1024px) {
-    bottom: 0%;
   }
 `;
 
