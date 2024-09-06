@@ -22,7 +22,7 @@ import {
 } from "./AboutMe.styled";
 
 import { useRef } from "react";
-import { useGSAPAnimations } from "hooks/useGSAPAnimation";
+import { useGSAPAnimations } from "hooks/aboutMe/useGSAPAnimation";
 
 const AboutMe = () => {
   const container = useRef();
