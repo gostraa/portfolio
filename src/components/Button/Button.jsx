@@ -1,16 +1,18 @@
+import { handleDownloadCV } from "helpers/downloadCV";
 import React, { useState } from "react";
 
-const Button = ({ type, isInHero, text, children, link, is, onClick }) => {
+const Button = ({ type, isInModal, text, children, link }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const width = isInHero ? "155px" : "180px";
+  const width = isInModal ? "155px" : "180px";
+  const height = isInModal ? "38px" : "56px";
   const background =
     type === "primary" ? "var(--primary-color)" : "var(--surface-secondary)";
 
   const buttonStyles = {
     display: "flex",
     width: width,
-    height: "56px",
+    height: height,
     justifyContent: "center",
     alignItems: "center",
     gap: "8px",
@@ -27,15 +29,20 @@ const Button = ({ type, isInHero, text, children, link, is, onClick }) => {
     color: "var(--text-primary)",
     textAlign: "center",
     fontFamily: "Heebo, sans-serif",
-    fontSize: "16px",
+    fontSize: "18px",
     fontWeight: "500",
     lineHeight: "1.5",
   };
 
-  return is === "link" ? (
+  return link ? (
     <a
       href={link}
-      style={{ width: width, background: background, ...buttonStyles }}
+      style={{
+        width: width,
+        height: height,
+        background: background,
+        ...buttonStyles,
+      }}
       target="_blank"
       rel="noopener noreferrer"
       onMouseOver={() => setIsHovered(true)}
@@ -52,7 +59,7 @@ const Button = ({ type, isInHero, text, children, link, is, onClick }) => {
         background: background,
         ...buttonStyles,
       }}
-      onClick={() => onClick && onClick()}
+      onClick={handleDownloadCV}
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
     >

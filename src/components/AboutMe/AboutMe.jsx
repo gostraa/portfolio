@@ -21,8 +21,6 @@ import {
   SvgWrapper,
 } from "./AboutMe.styled";
 
-import { handleDownloadCV } from "helpers/downloadCV";
-
 import { useRef } from "react";
 import { useGSAPAnimations } from "hooks/useGSAPAnimation";
 
@@ -65,13 +63,7 @@ const AboutMe = () => {
               as well as my self-taught guitar skills. I value the ability to
               dive into studies for entire days, losing track of time.
             </StyledSecondaryP>
-            <Button
-              type="primary"
-              isInHero={false}
-              text="Download CV"
-              is={"button"}
-              onClick={handleDownloadCV}
-            >
+            <Button type="primary" text="Download CV">
               <CVSvg />
             </Button>
           </InfoWrapAbout>

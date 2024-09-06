@@ -28,7 +28,7 @@ export const SkillsSection = styled.section`
 export const SkillsTitle = styled.h2`
   color: #7dffaf;
   font-family: Kalam, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
   margin-bottom: 24px;
   @media screen and (min-width: 1024px) {

@@ -42,7 +42,7 @@ const Header = () => {
               Projects
             </Link>
             <Link to="socialMedia" {...linkSettings}>
-              My Social Media
+              Contacts
             </Link>
           </Nav>
         )}

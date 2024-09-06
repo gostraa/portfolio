@@ -6,6 +6,7 @@ import {
   StyledHeroWrapper,
   StyledI,
   StyledScrollDown,
+  StyledSnake,
   StyledTitle,
   Typing,
 } from "./Hero.styled";
@@ -14,7 +15,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
 import Button from "components/Button/Button";
-import { handleDownloadCV } from "helpers/downloadCV";
+
 import { useRef } from "react";
 
 const Hero = () => {
@@ -23,17 +24,33 @@ const Hero = () => {
 
   useGSAP(() => {
     gsap.fromTo(
+      ".snake-line",
+      { opacity: 0 },
+      {
+        strokeDasharray: "2600",
+        strokeDashoffset: "2600",
+        opacity: 1,
+        duration: 10,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: hint.current,
+          start: "top 75%",
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
       hint.current,
       {
         opacity: 1,
       },
       {
         opacity: 0,
-        duration: 3,
+        duration: 5,
         scrollTrigger: {
           trigger: hint.current,
           start: "top 60%",
-          end: "top 30%",
+          end: "top 15%",
           scrub: true,
         },
       }
@@ -41,7 +58,7 @@ const Hero = () => {
   });
 
   return (
-    <>
+    <div>
       <StyledHeroWrapper>
         <Typing />
         <div>
@@ -52,13 +69,7 @@ const Hero = () => {
             HTML, CSS, JavaScript, React, Next.js and Node.js
           </StyledAbout>
           <LinksWrapper>
-            <Button
-              type="primary"
-              isInHero={true}
-              text={"Download CV"}
-              is={"button"}
-              onClick={handleDownloadCV}
-            >
+            <Button type="primary" text={"Download CV"}>
               <CVSvg />
             </Button>
           </LinksWrapper>
@@ -68,7 +79,8 @@ const Hero = () => {
       <StyledScrollDown ref={hint}>
         SCROLL DOWN TO FIND OUT MORE
       </StyledScrollDown>
-    </>
+      <StyledSnake />
+    </div>
   );
 };
 

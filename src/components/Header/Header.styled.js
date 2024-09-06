@@ -17,7 +17,7 @@ export const StyledHeader = styled.section`
   position: fixed;
   z-index: 1;
   @media screen and (min-width: 1024px) {
-    padding: 40px 40px;
+    padding: 30px 40px;
     justify-content: center;
   }
 `;

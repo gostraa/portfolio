@@ -7,8 +7,8 @@ export const Girl = styled(DevGrlSvg)`
   height: 276px;
 
   @media screen and (min-width: 768px) {
-    width: 400px;
-    height: 350px;
+    width: 410px;
+    height: 360px;
   }
   @media screen and (min-width: 1024px) {
     min-width: 452px;
@@ -79,6 +79,13 @@ export const SvgWrapper = styled.div`
   align-items: center;
   gap: 24px;
   margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    & svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
   @media screen and (min-width: 1024px) {
     & svg {
       width: 40px;
@@ -89,7 +96,7 @@ export const SvgWrapper = styled.div`
 export const StyledAboutTitle = styled.h2`
   color: #7dffaf;
   font-family: Kalam, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
   margin-bottom: 6px;
   @media screen and (min-width: 1024px) {
@@ -100,7 +107,7 @@ export const StyledAboutTitle = styled.h2`
 export const StyledGeneralP = styled.p`
   color: var(--text-primary);
   font-family: Heebo, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.3;
   margin-bottom: 16px;
