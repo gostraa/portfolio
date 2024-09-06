@@ -23,22 +23,22 @@ export const useGSAPAnimations = (hint) => {
         },
       }
     );
-  });
 
-  gsap.fromTo(
-    hint.current,
-    {
-      opacity: 1,
-    },
-    {
-      opacity: 0,
-      duration: 5,
-      scrollTrigger: {
-        trigger: hint.current,
-        start: "top 60%",
-        end: "top 15%",
-        scrub: true,
+    gsap.fromTo(
+      hint.current,
+      {
+        opacity: 1,
       },
-    }
-  );
+      {
+        opacity: 0,
+        duration: 5,
+        scrollTrigger: {
+          trigger: hint.current,
+          start: "top 60%",
+          end: "top 15%",
+          scrub: true,
+        },
+      }
+    );
+  });
 };

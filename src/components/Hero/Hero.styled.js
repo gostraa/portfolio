@@ -24,12 +24,12 @@ export const StyledSnake = styled(Snake)`
   @media screen and (min-width: 768px) {
     display: inline-block;
     position: absolute;
-    bottom: -20%;
+    bottom: -25%;
     z-index: -3;
   }
 
   @media screen and (min-width: 1024px) {
-    bottom: 10%;
+    bottom: 0%;
   }
 `;
 
