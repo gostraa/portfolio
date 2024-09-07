@@ -100,7 +100,7 @@ export const InfoWrap = styled.div`
   padding: 15px 20px;
   color: var(--text-primary);
   font-size: 18px;
-  font-family: Kalam, sans-serif;
+  font-family: Kalam, Manrope;
   p:nth-child(1) {
     font-size: 20px;
   }

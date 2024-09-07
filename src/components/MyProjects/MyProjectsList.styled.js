@@ -33,7 +33,7 @@ export const StyledItem = styled.li`
 
   h3 {
     color: var(--text-primary);
-    font-family: Kalam, sans-serif;
+    font-family: Kalam, Manrope;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -87,7 +87,7 @@ export const StyledSlideItem = styled.div`
 
   h3 {
     color: var(--text-primary);
-    font-family: Kalam, sans-serif;
+    font-family: Kalam, Manrope;
     font-weight: 500;
     line-height: 1.3;
     font-size: 22px;
@@ -100,7 +100,7 @@ export const StyledSlideItem = styled.div`
 
 export const StyledDate = styled.p`
   color: var(--text-secondary);
-  font-family: Heebo, sans-serif;
+  font-family: Heebo, Manrope;
   font-size: 14px;
   line-height: 1.71;
   @media screen and (min-width: 767.9px) {
@@ -115,7 +115,7 @@ export const StyledDate = styled.p`
 export const StyledTitleDescr = styled.p`
   width: 300px;
   color: var(--text-primary);
-  font-family: Kalam, sans-serif;
+  font-family: Kalam, Manrope;
   font-size: 16px;
   line-height: 1.5;
   @media screen and (min-width: 768px) {

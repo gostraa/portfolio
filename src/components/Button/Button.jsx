@@ -1,11 +1,14 @@
 import { handleDownloadCV } from "helpers/downloadCV";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Button = ({ type, isInModal, text, children, link }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const width = isInModal ? "155px" : "180px";
-  const height = isInModal ? "38px" : "56px";
+  const { t } = useTranslation();
+
+  const width = isInModal ? "155px" : "185px";
+  const height = isInModal ? "38px" : "66px";
   const background =
     type === "primary" ? "var(--primary-color)" : "var(--surface-secondary)";
 
@@ -16,9 +19,10 @@ const Button = ({ type, isInModal, text, children, link }) => {
     justifyContent: "center",
     alignItems: "center",
     gap: "8px",
+    padding: "12px",
     borderRadius: "8px",
     background: background,
-    border: isHovered ? "2px solid #7DFFAF" : "none",
+    border: isHovered ? "1px solid #7DFFAF" : "1px solid",
     boxShadow: isHovered
       ? "0px 0px 48px 0px rgba(125, 255, 175, 0.24)"
       : "none",
@@ -28,10 +32,10 @@ const Button = ({ type, isInModal, text, children, link }) => {
   const spanStyles = {
     color: "var(--text-primary)",
     textAlign: "center",
-    fontFamily: "Heebo, sans-serif",
-    fontSize: "18px",
+    fontFamily: "Heebo, Manrope",
+    fontSize: "16px",
     fontWeight: "500",
-    lineHeight: "1.5",
+    lineHeight: "1",
   };
 
   return link ? (
@@ -49,7 +53,7 @@ const Button = ({ type, isInModal, text, children, link }) => {
       onMouseOut={() => setIsHovered(false)}
     >
       {children}
-      <span style={spanStyles}>{text}</span>
+      <span style={spanStyles}>{t(text)}</span>
     </a>
   ) : (
     <button
@@ -64,7 +68,7 @@ const Button = ({ type, isInModal, text, children, link }) => {
       onMouseOut={() => setIsHovered(false)}
     >
       {children}
-      <span style={spanStyles}>{text}</span>
+      <span style={spanStyles}>{t(text)}</span>
     </button>
   );
 };

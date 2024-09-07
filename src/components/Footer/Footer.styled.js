@@ -38,7 +38,7 @@ export const FooterContainer = styled.div`
 
 export const TitleFooter = styled.h2`
   color: #7dffaf;
-  font-family: Kalam, sans-serif;
+  font-family: Kalam, Manrope;
   font-size: 18px;
   line-height: 1;
   margin-bottom: 8px;
@@ -49,7 +49,7 @@ export const TitleFooter = styled.h2`
 
 export const Primary = styled.p`
   color: var(--text-primary);
-  font-family: Heebo, sans-serif;
+  font-family: Heebo, Manrope;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.33;
@@ -61,7 +61,7 @@ export const Primary = styled.p`
 
 export const Secondary = styled.p`
   color: var(--text-secondary);
-  font-family: Heebo, sans-serif;
+  font-family: Heebo, Manrope;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 14px;

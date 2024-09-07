@@ -1,14 +1,15 @@
 {
-  "aboutme": "Про мене",
+  "About": "Про мене",
   "Projects": "Проекти",
-  "Skills": "Мої технічні навички",
-  "My Social Media": "Мої соціальні мережі",
+  "Skills": "Технічні навички",
+  "Contacts": "Контакти",
 
-  "Hi, I'm Mariia": "Вітаю, мене звати Марія",
+  "greetings": "Вітаю, мене звати Марія",
   "Front-end developer": "Я Front-end розробник",
   "I specialize in building web applications": "Я спеціалізуюся на розробці веб-додатків,",
-  "using technologies such as HTML, CSS, JavaScript, React, and Node.js .": "використовуючи технології, такі як HTML, CSS, JavaScript, React та Node.js.",
-  "Download CV": "Завантажити CV",
+  "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js": "використовуючи технології, такі як HTML, CSS, JavaScript, React та Node.js.",
+  "Download CV": "Завантажити резюме",
+  "hint": "ПРОКРУТІТЬ ВНИЗ, ЩОБ ДІЗНАТИСЯ БІЛЬШЕ",
   "aboutMe": {
     "About me": "Про мене",
     "I am an ambitious front-end developer": "Я амбіційна Front-end розробниця , ",

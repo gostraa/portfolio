@@ -1,14 +1,14 @@
 
 <svg id="snake-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 750">
-    <path class="snake-line" d="M -130 500 Q 250 200 600 200 T 2400 800" stroke="var(--primary-color)" fill="transparent" stroke-width="1"/>
-    <path class="snake-line" d="M -130 900 Q 250 400 800 200 T 2400 800" stroke="var(--primary-color)" fill="transparent" stroke-width="2"/>
-    <path class="snake-line" d="M -130 900 Q 250 400 800 100 T 2900 900" stroke="var(--primary-color)" fill="transparent" stroke-width="2"/>
-    <path class="snake-line" d="M -1030 900 Q 250 400 800 80 T 2900 900" stroke="var(--primary-color)" fill="transparent" stroke-width="2"/>
-    <path class="snake-line" d="M 0 350 Q 150 250 600 250 T 2400 800" stroke="var(--primary-color)" fill="transparent" stroke-width="3"/>
-    <path class="snake-line" d="M -130 600 Q 250 300 600 300 T 200 850" stroke="var(--primary-color)" fill="transparent" stroke-width="2" />
-    <path class="snake-line" d="M 200 400 Q 450 100 1200 500 T 2400 450" stroke="var(--primary-color)" fill="transparent" stroke-width="4" />
-    <path class="snake-line" d="M 400 500 Q 650 150 1600 700 T 2400 850" stroke="var(--primary-color)" fill="transparent" stroke-width="6" />
-    <path class="snake-line" d="M -160 700 Q 150 350 650 350 T 300 950" stroke="var(--primary-color)" fill="transparent" stroke-width="3" />
-    <path class="snake-line" d="M -160 700 Q 150 350 650 350 T 500 1700" stroke="var(--primary-color)" fill="transparent" stroke-width="3" />
+    <path class="snake-line" d="M -130 500 Q 250 200 600 200 T 2400 800" stroke="var(--primary-color)" fill="transparent" stroke-width="1.2"/>
+    <path class="snake-line" d="M -130 900 Q 250 400 800 200 T 2400 800" stroke="var(--primary-color)" fill="transparent" stroke-width="2.5"/>
+    <path class="snake-line" d="M -130 900 Q 250 400 800 100 T 2900 900" stroke="var(--primary-color)" fill="transparent" stroke-width="2.4"/>
+    <path class="snake-line" d="M -1030 900 Q 250 400 800 80 T 2900 900" stroke="var(--primary-color)" fill="transparent" stroke-width="2.7"/>
+    <path class="snake-line" d="M 0 350 Q 150 250 600 250 T 2400 800" stroke="var(--primary-color)" fill="transparent" stroke-width="3.1"/>
+    <path class="snake-line" d="M -130 600 Q 250 300 600 300 T 200 850" stroke="var(--primary-color)" fill="transparent" stroke-width="2.2" />
+    <path class="snake-line" d="M 200 400 Q 450 100 1200 500 T 2400 450" stroke="var(--primary-color)" fill="transparent" stroke-width="4.1" />
+    <path class="snake-line" d="M 400 500 Q 650 150 1600 700 T 2400 850" stroke="var(--primary-color)" fill="transparent" stroke-width="6.2" />
+    <path class="snake-line" d="M -160 700 Q 150 350 650 350 T 300 950" stroke="var(--primary-color)" fill="transparent" stroke-width="3.5" />
+    <path class="snake-line" d="M -160 700 Q 150 350 650 350 T 500 1700" stroke="var(--primary-color)" fill="transparent" stroke-width="3.2" />
 </svg>
 

@@ -1,13 +1,15 @@
 {
-  "About me": "About me",
+  "About": "About me",
   "Projects": "Projects",
   "Skills": "Skills",
-  "My Social Media": "My Social Media",
-  "Hi, I'm Mariia": "Hi, I'm Mariia",
+  "Contacts": "Contacts",
+  "greetings": "Hi, I'm Mariia",
   "Front-end developer": "Front-end developer",
   "I specialize in building web applications": "I specialize in building web applications",
-  "using technologies such as HTML, CSS, JavaScript, React, and Node.js .": "using technologies such as HTML, CSS, JavaScript, React, and Node.js .",
+  "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js": "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js",
   "Download CV": "Download CV",
+  "hint": "SCROLL DOWN TO FIND OUT MORE",
+
   "aboutMe": {
     "About me": "About me",
     "I am an ambitious front-end developer": "I am an ambitious front-end developer",

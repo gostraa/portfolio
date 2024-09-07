@@ -33,7 +33,7 @@ export const Nav = styled.nav`
   gap: 26px;
   padding: 10px 0;
   color: var(--text-primary);
-  font-family: Heebo, sans-serif;
+  font-family: Heebo, Manrope;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;

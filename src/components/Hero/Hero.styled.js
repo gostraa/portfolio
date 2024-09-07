@@ -49,16 +49,15 @@ export const StyledHeroWrapper = styled.section`
 
   @media screen and (min-width: 1024px) {
     flex-direction: row-reverse;
+    justify-content: space-around;
     padding: 180px 44px 50px 44px;
-    gap: 54px;
   }
 `;
 
 export const StyledTitle = styled.h1`
-  font-family: Kalam, sans-serif;
+  font-family: Kalam, Manrope;
   font-size: 40px;
   line-height: 1.4;
-  max-width: 280px;
   background: linear-gradient(90deg, #9955e8 0%, #7bffaf 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -71,7 +70,7 @@ export const StyledTitle = styled.h1`
 
 export const StyledI = styled.p`
   color: var(--text-primary);
-  font-family: Heebo, sans-serif;
+  font-family: Heebo, Manrope;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.33;
@@ -83,7 +82,7 @@ export const StyledI = styled.p`
 
 export const StyledAbout = styled.p`
   color: var(--text-secondary);
-  font-family: Heebo, sans-serif;
+  font-family: Heebo, Manrope;
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -102,18 +101,16 @@ export const LinksWrapper = styled.div`
 export const StyledScrollDown = styled.p`
   color: #7dffaf;
   text-align: center;
-  font-family: Kalam, sans-serif;
+  font-family: Kalam, Manrope;
   font-size: 16px;
-  width: 300px;
+
   margin: 0 auto;
   padding: 50px 10px;
   @media screen and (min-width: 768px) {
-    width: 400px;
     font-size: 22px;
   }
 
   @media screen and (min-width: 1024px) {
-    width: 450px;
     font-size: 24px;
   }
 `;
