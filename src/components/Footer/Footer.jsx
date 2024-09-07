@@ -15,8 +15,11 @@ import {
   TitleFooter,
 } from "./Footer.styled";
 import { animationSettingsFooter } from "constants/constants";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <FooterSection id="socialMedia">
       <FooterContainer>
@@ -25,14 +28,14 @@ const Footer = () => {
         </motion.div>
 
         <div>
-          <TitleFooter>Contact</TitleFooter>
-          <Primary>Enjoyed my work? Let’s work together</Primary>
+          <TitleFooter>{t("Contacts")}</TitleFooter>
+          <Primary>{t("Enjoyed my work?")}</Primary>
           <Secondary>
-            I’m always up for a chat. Pop me an email at
+            {t("I’m always up for a chat")}
             <a href="mailto:mariiacherkashyna7@gmail.com">
               mariiacherkashyna7@gmail.com
             </a>
-            or give me a shout on social media.
+            {t("or give me a shout on social media")}
           </Secondary>
           <SocialList>
             <li>

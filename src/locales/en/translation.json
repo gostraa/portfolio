@@ -10,31 +10,43 @@
   "Download CV": "Download CV",
   "hint": "SCROLL DOWN TO FIND OUT MORE",
 
-  "aboutMe": {
-    "About me": "About me",
-    "I am an ambitious front-end developer": "I am an ambitious front-end developer",
-    "seeking my first commercial experience.": "seeking my first commercial experience.",
-    "Besides programming, ": "Besides programming, ",
-    "I am a music enthusiast, ": "I am a music enthusiast, ",
-    "coffee lover, and self-taught guitarist.": "coffee lover, andself-taught guitarist.",
-    "I am currently seeking opportunities ": "I am currently seeking opportunities ",
-    "to apply my skills and enthusiasm to an IT company ": "to apply my skills and enthusiasm to an IT company ",
-    "in Ukraine or Slovakia.": "in Ukraine or Slovakia.",
-    "Download CV": "Download CV"
-  },
-  "skills": {
-    "Skills": "Skills"
-  },
+  "About me": "About me",
+  "Currently, I am collaborating with": "Currently, I am collaborating with",
+  "where I apply my skills and expertise to drive impactful solutions in commercial development": ", where I apply my skills and expertise to drive impactful solutions in commercial development",
+  "My passion for programming is in harmony with my love for music, as well as my self-taught guitar skills. I value the ability to dive into studies for entire days, losing track of time": "My passion for programming is in harmony with my love for music, as well as my self-taught guitar skills. I value the ability to dive into studies for entire days, losing track of time",
+  "Take a look at my highlighted projects": "Take a look at my highlighted projects",
+  "Contact": "Contact",
+  "Enjoyed my work?": "Enjoyed my work? Let’s work together!",
+  "I’m always up for a chat": "I’m always up for a chat! Pop me an email at",
+  "or give me a shout on social media": "or give me a shout on social media.",
   "projects": {
-    "Projects": "Projects",
-    "Take a look at my highlighted projects": "Take a look at my highlighted projects"
-  },
-  "footer": {
-    "Contact": "Contact",
-    "Enjoyed my work?": "Enjoyed my work?",
-    "Let’s work together": "Let’s work together",
-    "I’m always up for a chat.": "I’m always up for a chat.",
-    "Pop me an email at": "Pop me an email at",
-    "or give me a shout on social media.": "or give me a shout on social media."
+    "Jul 2023": "Jul 2023",
+    "The minimalistic website for a furniture store": "The minimalistic website for a furniture store",
+    "My first experience of working in a team.Landing page for a furniture store with minimalist animation.": "My first experience of working in a team.Landing page for a furniture store with minimalist animation.",
+    "CLIENTS REVIEWS and NEWSLETTER sections": "CLIENTS REVIEWS and NEWSLETTER sections",
+    "Aug 2023": "Aug 2023",
+    "Let's make your own cinema!": "Let's make your own cinema!",
+    "The website where you can explore all movies and their trailers": "The website where you can explore all movies and their trailers",
+    "My Library Page": "My Library Page",
+    "Sep 2023": "Sep 2023",
+    "Analyze and optimize Your finances!": "Analyze and optimize Your finances!",
+    "Instrument for analyzing your financial state, optimizing finances, and effectively managing them.": "Instrument for analyzing your financial state, optimizing finances, and effectively managing them.",
+    "Home Page": "Home Page",
+    "Oct 2023": "Oct 2023",
+    "Your gateway to boundless adventures!": "Your gateway to boundless adventures!",
+    "You have the option to find a car by name or filter based on specific criteria! Additionally, you can read detailed information and add the car to your favorites.": "ou have the option to find a car by name or filter based on specific criteria! Additionally, you can read detailed information and add the car to your favorites.",
+    "My own project": "My own project",
+    "Nov 2023": "Nov 2023",
+    "Personal website for an English language teacher": "Personal website for an English language teacher",
+    "First experience working on a real project within a cross-functional team.": "First experience working on a real project within a cross-functional team.",
+    "letter submission form and My service section": "letter submission form and My service section",
+    "Dec 2023": "Dec 2023",
+    "Сontrol your water balance every day!": "Сontrol your water balance every day!",
+    "The aplication where you can monitor the amount of water consumed": "The aplication where you can monitor the amount of water consumed",
+    "Settings (modal and form), Today list of portions of water per day also helped in creating a calendar (a pop-up window with information for a specific day)": "Settings (modal and form), Today list of portions of water per day also helped in creating a calendar (a pop-up window with information for a specific day)",
+    "Jan 2024": "Jan 2024",
+    "A website for a nail service master": "A website for a nail service master",
+    "Business website for a manicurist.": "Business website for a manicurist.",
+    "Hero, Manicure, Nail shapes, Diplomas, Reviews sections and Preload component": "Hero, Manicure, Nail shapes, Diplomas, Reviews sections and Preload component"
   }
 }
