@@ -19,6 +19,7 @@ export const useGSAPAnimations = (hint) => {
         scrollTrigger: {
           trigger: ".snake-line",
           start: "top 55%",
+          end: "top 0%",
           scrub: true,
         },
       }

@@ -81,7 +81,7 @@ export const NavigateVariants = {
     },
   }),
   hidden: {
-    clipPath: "circle(20px at calc(100% - 35px) 40px)",
+    clipPath: "circle(1px at calc(100% - 45px) 30px)",
     transition: {
       type: "spring",
       stiffness: 400,

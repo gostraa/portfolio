@@ -5,7 +5,7 @@
   "Contacts": "Contacts",
   "greetings": "Hi, I'm Mariia",
   "Front-end developer": "Front-end developer",
-  "I specialize in building web applications": "I specialize in building web applications",
+  "I specialize in building web applications": "I specialize in building web applications, ",
   "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js": "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js",
   "Download CV": "Download CV",
   "hint": "SCROLL DOWN TO FIND OUT MORE",
@@ -22,7 +22,7 @@
   "projects": {
     "Jul 2023": "Jul 2023",
     "The minimalistic website for a furniture store": "The minimalistic website for a furniture store",
-    "My first experience of working in a team.Landing page for a furniture store with minimalist animation.": "My first experience of working in a team.Landing page for a furniture store with minimalist animation.",
+    "My first experience of working in a team.Landing page for a furniture store with minimalist animation.": "My first experience of working in a team. Landing page for a furniture store with minimalist animation.",
     "CLIENTS REVIEWS and NEWSLETTER sections": "CLIENTS REVIEWS and NEWSLETTER sections",
     "Aug 2023": "Aug 2023",
     "Let's make your own cinema!": "Let's make your own cinema!",
@@ -47,6 +47,11 @@
     "Jan 2024": "Jan 2024",
     "A website for a nail service master": "A website for a nail service master",
     "Business website for a manicurist.": "Business website for a manicurist.",
-    "Hero, Manicure, Nail shapes, Diplomas, Reviews sections and Preload component": "Hero, Manicure, Nail shapes, Diplomas, Reviews sections and Preload component"
+    "Hero, Manicure, Nail shapes, Diplomas, Reviews sections and Preload component": "Hero, Manicure, Nail shapes, Diplomas, Reviews sections and Preload component",
+    "My role in this project": "My role in this project",
+    "Technologies": "Technologies",
+    "I worked on": "I worked on",
+    "Take a look at this project": "Take a look at this project",
+    "Open Live Page": "Open Live Page"
   }
 }

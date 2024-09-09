@@ -16,8 +16,11 @@ import {
 } from "./ModalInfo.styled";
 
 import { animationSettingsModal, projectImages } from "constants/constants";
+import { useTranslation } from "react-i18next";
 
 const ModalInfo = ({ onClose, currentProject }) => {
+  const { t } = useTranslation();
+
   const modal = document.querySelector("#modal");
 
   useEffect(() => {
@@ -55,15 +58,21 @@ const ModalInfo = ({ onClose, currentProject }) => {
             />
           </ImgWrapper>
           <InfoWrap>
-            <p>{currentProject.date}</p>
+            <p>{t(`projects.${currentProject.date}`)}</p>
 
             <h2>{currentProject.name}</h2>
-            <p>{currentProject.description}</p>
-            <p>My role in this project : {currentProject.role}</p>
-            <p>Technologies : {currentProject.skills}</p>
-
-            <p>I worked on : {currentProject.workedOn}</p>
-            <Primary>Take a look at this project</Primary>
+            <p>{t(`projects.${currentProject.description}`)}</p>
+            <p>
+              {t("projects.My role in this project")} : {currentProject.role}
+            </p>
+            <p>
+              {t("projects.Technologies")} : {currentProject.skills}
+            </p>
+            <p>
+              {t("projects.I worked on")} :{" "}
+              {t(`projects.${currentProject.workedOn}`)}
+            </p>
+            <Primary>{t("projects.Take a look at this project")}</Primary>
             <Button
               text={"Open Live Page"}
               isInModal={true}

@@ -8,19 +8,24 @@ export const Typing = styled(TypingSvg)`
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-    width: 522px;
-    height: 476px;
+    width: 422px;
+    height: 376px;
     margin-bottom: 32px;
   }
   @media screen and (min-width: 1024px) {
     width: 482px;
     height: 426px;
   }
+  @media screen and (min-width: 1440px) {
+    width: 582px;
+    height: 526px;
+  }
 `;
 
 export const Wrapper = styled.div`
   position: relative;
 `;
+
 export const StyledSnake = styled(Snake)`
   display: none;
 
@@ -49,13 +54,17 @@ export const StyledHeroWrapper = styled.section`
 
   @media screen and (min-width: 1024px) {
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 180px 44px 50px 44px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 150px 44px 50px 44px;
   }
 `;
 
 export const StyledTitle = styled.h1`
-  font-family: Kalam, Manrope;
+  font-family: Kalam, Caveat;
   font-size: 40px;
   line-height: 1.4;
   background: linear-gradient(90deg, #9955e8 0%, #7bffaf 100%);
@@ -65,6 +74,9 @@ export const StyledTitle = styled.h1`
 
   @media screen and (min-width: 1024px) {
     font-size: 38px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 42px;
   }
 `;
 
@@ -78,6 +90,9 @@ export const StyledI = styled.p`
   @media screen and (min-width: 1024px) {
     font-size: 24px;
   }
+  @media screen and (min-width: 1440px) {
+    font-size: 28px;
+  }
 `;
 
 export const StyledAbout = styled.p`
@@ -90,6 +105,11 @@ export const StyledAbout = styled.p`
 
   @media screen and (min-width: 1024px) {
     font-size: 20px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
+    margin-bottom: 80px;
   }
 `;
 
@@ -101,7 +121,7 @@ export const LinksWrapper = styled.div`
 export const StyledScrollDown = styled.p`
   color: #7dffaf;
   text-align: center;
-  font-family: Kalam, Manrope;
+  font-family: Kalam, Caveat;
   font-size: 16px;
 
   margin: 0 auto;

@@ -11,8 +11,12 @@ import {
   linkStyle,
   iconStyles,
 } from "constants/constants";
+import LanguageButtons from "components/languageButtons/LanguageButtons";
+import { useTranslation } from "react-i18next";
 
 const NavigationMenu = ({ toggleNav }) => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     document.body.style.overflow = "hidden";
     const handleKeyDown = (e) => {
@@ -32,6 +36,7 @@ const NavigationMenu = ({ toggleNav }) => {
       toggleNav();
     }
   };
+
   return (
     <Backdrop
       {...animationSettingsNavigate}
@@ -49,7 +54,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              About me
+              {t("About")}
             </Link>
             <Link
               to="projects"
@@ -58,7 +63,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              Projects
+              {t("Projects")}
             </Link>
             <Link
               to="skills"
@@ -67,7 +72,7 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              Skills
+              {t("Skills")}
             </Link>
             <Link
               to="socialMedia"
@@ -76,9 +81,10 @@ const NavigationMenu = ({ toggleNav }) => {
               onClick={toggleNav}
               style={linkStyle}
             >
-              My Social Media
+              {t("Contacts")}
             </Link>
           </Nav>
+          <LanguageButtons />
         </Menu>
       </AnimatePresence>
     </Backdrop>

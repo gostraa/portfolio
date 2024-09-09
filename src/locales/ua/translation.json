@@ -6,7 +6,7 @@
 
   "greetings": "Вітаю, мене звати Марія",
   "Front-end developer": "Я Front-end розробник",
-  "I specialize in building web applications": "Я спеціалізуюся на розробці веб-додатків,",
+  "I specialize in building web applications": "Я спеціалізуюся на розробці веб-додатків, ",
   "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js": "використовуючи технології, такі як HTML, CSS, JavaScript, React та Node.js.",
   "Download CV": "Завантажити резюме",
   "hint": "ПРОКРУТІТЬ ВНИЗ, ЩОБ ДІЗНАТИСЯ БІЛЬШЕ",
@@ -27,7 +27,7 @@
   "projects": {
     "Jul 2023": "Липень 2023",
     "The minimalistic website for a furniture store": "Мінімалістичний вебсайт для меблевого магазину",
-    "My first experience of working in a team. Landing page for a furniture store with minimalist animation.": "Мій перший досвід роботи в команді. Лендінг для меблевого магазину з мінімалістичною анімацією.",
+    "My first experience of working in a team.Landing page for a furniture store with minimalist animation.": "Мій перший досвід роботи в команді. Лендінг для меблевого магазину з мінімалістичною анімацією.",
     "CLIENTS REVIEWS and NEWSLETTER sections": "Розділи CLIENTS REVIEWS та NEWSLETTER",
     "Aug 2023": "Серпень 2023",
     "Let's make your own cinema!": "Створіть власний кінотеатр!",
@@ -52,6 +52,11 @@
     "Jan 2024": "Січень 2024",
     "A website for a nail service master": "Вебсайт для майстра манікюру",
     "Business website for a manicurist.": "Комерційний вебсайт для манікюриста.",
-    "Hero, Manicure, Nail shapes, Diplomas, Reviews sections and Preload component": "Розділи Hero, Manicure, Nail shapes, Diplomas, Reviews та компонент Preload"
+    "Hero, Manicure, Nail shapes, Diplomas, Reviews sections and Preload component": "Розділи Hero, Manicure, Nail shapes, Diplomas, Reviews та компонент Preload",
+    "My role in this project": "Моя роль у цьому проєкті",
+    "Technologies": "Технології",
+    "I worked on": "Я працювала над",
+    "Take a look at this project": "Перегляньте цей проєкт",
+    "Open Live Page": "Сторінка проєкту"
   }
 }

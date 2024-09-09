@@ -95,7 +95,7 @@ export const SvgWrapper = styled.div`
 `;
 export const StyledAboutTitle = styled.h2`
   color: #7dffaf;
-  font-family: Kalam, Manrope;
+  font-family: Kalam, Caveat;
   font-size: 18px;
   line-height: 1;
   margin-bottom: 6px;

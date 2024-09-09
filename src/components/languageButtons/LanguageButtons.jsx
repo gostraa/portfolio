@@ -1,16 +1,30 @@
+import { useState } from "react";
 import i18n from "../../i18n";
-import { ButtonLang } from "./LanguageButtons.styled";
+import { SwitchWrapper } from "./LanguageButtons.styled";
 
-const LanguageButtons = () => {
-  const changeLanguages = (lng) => {
-    i18n.changeLanguage(lng);
+const LanguageSwitch = () => {
+  const [isChecked, setIsChecked] = useState(i18n.language === "en");
+
+  const toggleLanguage = () => {
+    const newLanguage = isChecked ? "ua" : "en";
+    i18n.changeLanguage(newLanguage);
+    setIsChecked(!isChecked);
   };
+
   return (
-    <div style={{ marginLeft: "auto" }}>
-      <ButtonLang onClick={() => changeLanguages("en")}>en</ButtonLang>
-      <ButtonLang onClick={() => changeLanguages("ua")}>ua</ButtonLang>
-    </div>
+    <SwitchWrapper>
+      <input
+        id="language-toggle"
+        className="check-toggle check-toggle-round-flat"
+        type="checkbox"
+        checked={isChecked}
+        onChange={toggleLanguage}
+      />
+      <label htmlFor="language-toggle"></label>
+      <span className="on">UA</span>
+      <span className="off">EN</span>
+    </SwitchWrapper>
   );
 };
 
-export default LanguageButtons;
+export default LanguageSwitch;

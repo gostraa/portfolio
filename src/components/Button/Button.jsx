@@ -53,7 +53,7 @@ const Button = ({ type, isInModal, text, children, link }) => {
       onMouseOut={() => setIsHovered(false)}
     >
       {children}
-      <span style={spanStyles}>{t(text)}</span>
+      <span style={spanStyles}>{t(`projects.${text}`)}</span>
     </a>
   ) : (
     <button

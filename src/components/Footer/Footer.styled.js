@@ -38,7 +38,7 @@ export const FooterContainer = styled.div`
 
 export const TitleFooter = styled.h2`
   color: #7dffaf;
-  font-family: Kalam, Manrope;
+  font-family: Kalam, Caveat;
   font-size: 18px;
   line-height: 1;
   margin-bottom: 8px;
@@ -75,12 +75,12 @@ export const Secondary = styled.p`
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 18px;
 
     & a {
       color: #7dffaf;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.5;
       text-decoration-line: underline;
       margin: 0 8px;

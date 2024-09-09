@@ -33,23 +33,25 @@ const Header = () => {
         {!isDesktop ? (
           <BurgerSvg onClick={toggleNav} />
         ) : (
-          <Nav>
-            <Link to="about" {...linkSettings}>
-              {t("About")}
-            </Link>
+          <>
+            <Nav>
+              <Link to="about" {...linkSettings}>
+                {t("About")}
+              </Link>
 
-            <Link to="skills" {...linkSettings}>
-              {t("Skills")}
-            </Link>
-            <Link to="projects" {...linkSettings}>
-              {t("Projects")}
-            </Link>
-            <Link to="socialMedia" {...linkSettings}>
-              {t("Contacts")}
-            </Link>
-          </Nav>
+              <Link to="skills" {...linkSettings}>
+                {t("Skills")}
+              </Link>
+              <Link to="projects" {...linkSettings}>
+                {t("Projects")}
+              </Link>
+              <Link to="socialMedia" {...linkSettings}>
+                {t("Contacts")}
+              </Link>
+            </Nav>
+            <LanguageButtons />
+          </>
         )}
-        <LanguageButtons />
       </StyledHeader>
     </>
   );

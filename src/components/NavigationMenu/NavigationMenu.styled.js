@@ -17,10 +17,14 @@ export const Backdrop = styled(motion.div)`
 
 export const Menu = styled(motion.div)`
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 60%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 24px;
+  right: 24px;
+  width: 50%;
+  height: 40%;
+  border-radius: 24px;
   z-index: 999;
   background-color: var(--surface-primary);
   padding: 20px;
@@ -30,16 +34,16 @@ export const Nav = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 26px;
+
+  gap: 44px;
   padding: 10px 0;
   color: var(--text-primary);
   font-family: Heebo, Manrope;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
 
   @media screen and (min-width: 767.9px) {
-    font-size: 18px;
     font-weight: 700;
     line-height: 1.2;
   }
