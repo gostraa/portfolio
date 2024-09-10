@@ -17,8 +17,8 @@ export const useGSAPAnimations = (hint) => {
         duration: 10,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: ".snake-line",
-          start: "top 55%",
+          trigger: hint.current,
+          start: "top 75%",
           end: "top 0%",
           scrub: true,
         },
