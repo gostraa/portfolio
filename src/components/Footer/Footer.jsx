@@ -16,6 +16,7 @@ import {
 } from "./Footer.styled";
 import { animationSettingsFooter } from "constants/constants";
 import { useTranslation } from "react-i18next";
+import ContactForm from "components/ContactForm/ContactForm";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -23,18 +24,14 @@ const Footer = () => {
   return (
     <FooterSection id="socialMedia">
       <FooterContainer>
-        <motion.div {...animationSettingsFooter}>
-          <MyAvatar />
-        </motion.div>
-
         <div>
+          <motion.div {...animationSettingsFooter}>
+            <MyAvatar />
+          </motion.div>
           <TitleFooter>{t("Contacts")}</TitleFooter>
           <Primary>{t("Enjoyed my work?")}</Primary>
           <Secondary>
-            {t("I’m always up for a chat")}
-            <a href="mailto:mariiacherkashyna7@gmail.com">
-              mariiacherkashyna7@gmail.com
-            </a>
+            {t("I’m always up for a chat")}{" "}
             {t("or give me a shout on social media")}
           </Secondary>
           <SocialList>
@@ -76,6 +73,7 @@ const Footer = () => {
             </li>
           </SocialList>
         </div>
+        <ContactForm />
       </FooterContainer>
     </FooterSection>
   );
