@@ -2,6 +2,7 @@ import { useGSAPAnimations } from "hooks/hero/useGSAPAnimations";
 import { ReactComponent as CVSvg } from "../../svg/ReadCvLogo.svg";
 
 import {
+  Background,
   LinksWrapper,
   StyledAbout,
   StyledHeroWrapper,
@@ -24,7 +25,7 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <>
+    <Background>
       <StyledHeroWrapper>
         <Typing />
         <div>
@@ -48,7 +49,7 @@ const Hero = () => {
         <StyledScrollDown ref={hint}>{t("hint")}</StyledScrollDown>
         <StyledSnake />
       </Wrapper>
-    </>
+    </Background>
   );
 };
 

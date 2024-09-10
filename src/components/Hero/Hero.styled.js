@@ -2,6 +2,15 @@ import styled from "styled-components";
 import { ReactComponent as TypingSvg } from "../../svg/bro.svg";
 import { ReactComponent as Snake } from "../../svg/Snake.svg";
 
+import backgroundImage from "../../images/bg12.png";
+
+export const Background = styled.div`
+  background-image: url(${backgroundImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+`;
+
 export const Typing = styled(TypingSvg)`
   width: 322px;
   height: 276px;

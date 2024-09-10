@@ -44,14 +44,13 @@ export const SwitchWrapper = styled.div`
     padding: 1px;
     width: 100px;
     height: 35px;
-    background: linear-gradient(90deg, #9955e8 0%, #7bffaf 100%);
+    background: var(--surface-secondary);
     border-radius: 60px;
   }
 
   input.check-toggle + label:before {
     content: "";
     position: absolute;
-    background: linear-gradient(90deg, #9955e8 0%, #7bffaf 100%);
     border-radius: 60px;
   }
 
