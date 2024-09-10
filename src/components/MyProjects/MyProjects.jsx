@@ -3,6 +3,7 @@ import { StyledDescr, StyledSection, StyledTitle } from "./MyProject.styled";
 import { useQuery } from "@tanstack/react-query";
 import { RingLoader } from "react-spinners";
 import { fetchProjects } from "actions";
+import { useTranslation } from "react-i18next";
 
 const MyProjects = () => {
   const {
@@ -13,10 +14,13 @@ const MyProjects = () => {
     queryKey: ["projects"],
     queryFn: fetchProjects,
   });
+
+  const { t } = useTranslation();
+
   return (
     <StyledSection id="projects">
-      <StyledTitle>Projects</StyledTitle>
-      <StyledDescr>Take a look at my highlighted projects</StyledDescr>
+      <StyledTitle>{t("Projects")}</StyledTitle>
+      <StyledDescr>{t("Take a look at my highlighted projects")}</StyledDescr>
       {isLoading && (
         <div
           style={{

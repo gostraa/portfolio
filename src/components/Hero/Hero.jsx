@@ -16,21 +16,25 @@ import {
 import Button from "components/Button/Button";
 
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
   const hint = useRef();
   useGSAPAnimations(hint);
+  const { t } = useTranslation();
 
   return (
     <>
       <StyledHeroWrapper>
         <Typing />
         <div>
-          <StyledTitle>Hi, I'm Mariia</StyledTitle>
-          <StyledI>Front-end developer</StyledI>
+          <StyledTitle>{t("greetings")}</StyledTitle>
+          <StyledI>{t("Front-end developer")}</StyledI>
           <StyledAbout>
-            I specialize in building web applications using technologies such as
-            HTML, CSS, JavaScript, React, Next.js and Node.js
+            {t("I specialize in building web applications")}
+            {t(
+              "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js"
+            )}
           </StyledAbout>
           <LinksWrapper>
             <Button type="primary" text={"Download CV"}>
@@ -41,9 +45,7 @@ const Hero = () => {
       </StyledHeroWrapper>
 
       <Wrapper>
-        <StyledScrollDown ref={hint}>
-          SCROLL DOWN TO FIND OUT MORE
-        </StyledScrollDown>
+        <StyledScrollDown ref={hint}>{t("hint")}</StyledScrollDown>
         <StyledSnake />
       </Wrapper>
     </>

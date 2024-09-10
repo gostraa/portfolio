@@ -1,39 +1,62 @@
 {
-  "aboutme": "Про мене",
+  "About": "Про мене",
   "Projects": "Проекти",
-  "Skills": "Мої технічні навички",
-  "My Social Media": "Мої соціальні мережі",
+  "Skills": "Технічні навички",
+  "Contacts": "Контакти",
 
-  "Hi, I'm Mariia": "Вітаю, мене звати Марія",
+  "greetings": "Вітаю, мене звати Марія",
   "Front-end developer": "Я Front-end розробник",
-  "I specialize in building web applications": "Я спеціалізуюся на розробці веб-додатків,",
-  "using technologies such as HTML, CSS, JavaScript, React, and Node.js .": "використовуючи технології, такі як HTML, CSS, JavaScript, React та Node.js.",
-  "Download CV": "Завантажити CV",
-  "aboutMe": {
-    "About me": "Про мене",
-    "I am an ambitious front-end developer": "Я амбіційна Front-end розробниця , ",
-    "seeking my first commercial experience.": "шукаюча свій перший комерційний досвід роботи.",
-    "Besides programming, ": "Окрім програмування, ",
-    "I am a music enthusiast, ": "я цінувачка кави, ",
-    "coffee lover, and self-taught guitarist.": "музики і самостійно вивчила гру на гітарі.",
-    "I am currently seeking opportunities ": "У даний момент шукаю можливості ",
-    "to apply my skills and enthusiasm to an IT company ": "щоб використовувати свої навички і ентузіазм в ІТ-компанії. ",
-    "in Ukraine or Slovakia.": "В Україні чи Словаччині.",
-    "Download CV": "Завантажити CV"
-  },
-  "skills": {
-    "Skills": "Мої технічні навички"
-  },
+  "I specialize in building web applications": "Я спеціалізуюся на розробці веб-додатків, ",
+  "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js": "використовуючи технології, такі як HTML, CSS, JavaScript, React та Node.js.",
+  "Download CV": "Завантажити резюме",
+  "hint": "ПРОКРУТІТЬ ВНИЗ, ЩОБ ДІЗНАТИСЯ БІЛЬШЕ",
+
+  "About me": "Про мене",
+  "Currently, I am collaborating with": "Наразі я співпрацюю з",
+  "where I apply my skills and expertise to drive impactful solutions in commercial development": "де використовую свої навички та досвід для створення ефективних рішень у сфері комерційної розробки",
+  "My passion for programming is in harmony with my love for music, as well as my self-taught guitar skills. I value the ability to dive into studies for entire days, losing track of time": "Моя пристрасть до програмування гармонійно поєднується з любов’ю до музики та моїми самостійно набутими навичками гри на гітарі. Я ціную можливість занурюватися у навчання на цілі дні, втрачаючи відчуття часу",
+
+  "Take a look at my highlighted projects": "Ознайомтеся з моїми проектами",
+
+  "Enjoyed my work?": "Сподобалася моя робота? Давайте співпрацювати!",
+
+  "I’m always up for a chat": "Я завжди на зв`язку! Напишіть мені листа за адресою:",
+
+  "or give me a shout on social media": "або зверніться до мене через соціальні мережі.",
+
   "projects": {
-    "Projects": "Проекти",
-    "Take a look at my highlighted projects": "Ознайомтеся з моїми проектами."
-  },
-  "footer": {
-    "Contact": "Мої контакти",
-    "Enjoyed my work?": "Сподобалася моя робота?",
-    "Let’s work together": "Давайте працювати разом",
-    "I’m always up for a chat.": "Я завжди на зв`язку.",
-    "Pop me an email at": "Напишіть мені листа за адресою:",
-    "or give me a shout on social media.": "або зверніться до мене через соціальні мережі."
+    "Jul 2023": "Липень 2023",
+    "The minimalistic website for a furniture store": "Мінімалістичний вебсайт для меблевого магазину",
+    "My first experience of working in a team.Landing page for a furniture store with minimalist animation.": "Мій перший досвід роботи в команді. Лендінг для меблевого магазину з мінімалістичною анімацією.",
+    "CLIENTS REVIEWS and NEWSLETTER sections": "Розділи CLIENTS REVIEWS та NEWSLETTER",
+    "Aug 2023": "Серпень 2023",
+    "Let's make your own cinema!": "Створіть власний кінотеатр!",
+    "The website where you can explore all movies and their trailers": "Вебсайт, де ви можете переглядати всі фільми та їхні трейлери",
+    "My Library Page": "Сторінка My Library",
+    "Sep 2023": "Вересень 2023",
+    "Analyze and optimize Your finances!": "Аналізуйте та оптимізуйте ваші фінанси!",
+    "Instrument for analyzing your financial state, optimizing finances, and effectively managing them.": "Інструмент для аналізу вашого фінансового стану, оптимізації фінансів та ефективного їх управління.",
+    "Home Page": "Головна сторінка",
+    "Oct 2023": "Жовтень 2023",
+    "Your gateway to boundless adventures!": "Ваш шлях до безмежних пригод!",
+    "You have the option to find a car by name or filter based on specific criteria! Additionally, you can read detailed information and add the car to your favorites.": "Ви можете знайти автомобіль за назвою або відфільтрувати за конкретними критеріями! Також ви можете прочитати детальну інформацію та додати автомобіль до своїх улюблених.",
+    "My own project": "Мій власний проект",
+    "Nov 2023": "Листопад 2023",
+    "Personal website for an English language teacher": "Персональний вебсайт для викладача англійської мови",
+    "First experience working on a real project within a cross-functional team.": "Перший досвід роботи над реальним проектом у складі крос-функціональної команди.",
+    "letter submission form and My service section": "форма подання листа та розділ My Service",
+    "Dec 2023": "Грудень 2023",
+    "Сontrol your water balance every day!": "Контролюйте свій водний баланс щодня!",
+    "The application where you can monitor the amount of water consumed": "Застосунок, де ви можете стежити за кількістю спожитої води",
+    "Settings (modal and form), Today list of portions of water per day also helped in creating a calendar (a pop-up window with information for a specific day)": "Налаштування (модальне вікно та форма), список порцій води на сьогодні, також допомагала у створенні календаря (випливаюче вікно з інформацією на конкретний день)",
+    "Jan 2024": "Січень 2024",
+    "A website for a nail service master": "Вебсайт для майстра манікюру",
+    "Business website for a manicurist.": "Комерційний вебсайт для манікюриста.",
+    "Hero, Manicure, Nail shapes, Diplomas, Reviews sections and Preload component": "Розділи Hero, Manicure, Nail shapes, Diplomas, Reviews та компонент Preload",
+    "My role in this project": "Моя роль у цьому проєкті",
+    "Technologies": "Технології",
+    "I worked on": "Я працювала над",
+    "Take a look at this project": "Перегляньте цей проєкт",
+    "Open Live Page": "Сторінка проєкту"
   }
 }

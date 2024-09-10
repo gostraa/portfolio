@@ -6,17 +6,20 @@ import {
   StyledSlideItem,
   StyledTitleDescr,
 } from "./MyProjectsList.styled";
+import { useTranslation } from "react-i18next";
 
 const SlideItem = ({ project, handleOpenModal }) => {
+  const { t } = useTranslation();
+
   return (
     <StyledSlideItem
       onClick={() => handleOpenModal(project.name)}
       key={project.name}
     >
       <StyledProImg src={projectImages[project.image]} alt={project.name} />
-      <StyledDate>{project.date}</StyledDate>
+      <StyledDate>{t(`projects.${project.date}`)}</StyledDate>
       <h3>{project.name}</h3>
-      <StyledTitleDescr>{project.title}</StyledTitleDescr>
+      <StyledTitleDescr>{t(`projects.${project.title}`)}</StyledTitleDescr>
     </StyledSlideItem>
   );
 };

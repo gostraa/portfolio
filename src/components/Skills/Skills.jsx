@@ -8,13 +8,16 @@ import {
   StarSecondSvg,
   StarSvg,
 } from "./Skills.styled";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <SkillsSection id="skills">
       <StarSvg />
       <div>
-        <SkillsTitle>Skills</SkillsTitle>
+        <SkillsTitle>{t("Skills")}</SkillsTitle>
         <SkillsList>
           {skillsArr.map((skill, i) => {
             return (

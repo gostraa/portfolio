@@ -23,11 +23,14 @@ import {
 
 import { useRef } from "react";
 import { useGSAPAnimations } from "hooks/aboutMe/useGSAPAnimation";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
   const container = useRef();
   const arrow = useRef();
   const svgContainer = useRef();
+
+  const { t } = useTranslation();
 
   useGSAPAnimations(container, arrow, svgContainer);
 
@@ -49,19 +52,20 @@ const AboutMe = () => {
               <NodeSvg className="svg" />
             </SvgWrapper>
 
-            <StyledAboutTitle>About me</StyledAboutTitle>
+            <StyledAboutTitle>{t("About")}</StyledAboutTitle>
             <StyledGeneralP>
-              Currently, I am collaborating with{" "}
+              {t("Currently, I am collaborating with")}{" "}
               <LinkLeo href="https://www.upwork.com/agencies/leosource/">
                 Leo•Source
               </LinkLeo>{" "}
-              , where I apply my skills and expertise to drive impactful
-              solutions in commercial development.
+              {t(
+                "where I apply my skills and expertise to drive impactful solutions in commercial development"
+              )}
             </StyledGeneralP>
             <StyledSecondaryP>
-              My passion for programming is in harmony with my love for music,
-              as well as my self-taught guitar skills. I value the ability to
-              dive into studies for entire days, losing track of time.
+              {t(
+                "My passion for programming is in harmony with my love for music, as well as my self-taught guitar skills. I value the ability to dive into studies for entire days, losing track of time"
+              )}
             </StyledSecondaryP>
             <Button type="primary" text="Download CV">
               <CVSvg />

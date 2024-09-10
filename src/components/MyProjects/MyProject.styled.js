@@ -15,7 +15,7 @@ export const StyledSection = styled.section`
 export const StyledTitle = styled.h2`
   text-align: center;
   color: #7dffaf;
-  font-family: Kalam, sans-serif;
+  font-family: Kalam, Caveat;
   font-size: 18px;
   line-height: 1;
   margin-bottom: 8px;
@@ -27,7 +27,7 @@ export const StyledTitle = styled.h2`
 export const StyledDescr = styled.p`
   color: var(--text-primary);
   text-align: center;
-  font-family: Heebo, sans-serif;
+  font-family: Heebo, Manrope;
   font-size: 26px;
   font-weight: 500;
   line-height: 1.33;

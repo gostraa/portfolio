@@ -8,6 +8,8 @@ import { Nav } from "components/NavigationMenu/NavigationMenu.styled";
 import { BurgerSvg, StyledHeader } from "./Header.styled";
 
 import { linkSettings } from "constants/constants";
+import LanguageButtons from "components/languageButtons/LanguageButtons";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -19,6 +21,7 @@ const Header = () => {
   const toggleNav = () => {
     setIsOpenMenu((isOpen) => !isOpen);
   };
+  const { t } = useTranslation();
 
   return (
     <>
@@ -30,21 +33,24 @@ const Header = () => {
         {!isDesktop ? (
           <BurgerSvg onClick={toggleNav} />
         ) : (
-          <Nav>
-            <Link to="about" {...linkSettings}>
-              About me
-            </Link>
+          <>
+            <Nav>
+              <Link to="about" {...linkSettings}>
+                {t("About")}
+              </Link>
 
-            <Link to="skills" {...linkSettings}>
-              Skills
-            </Link>
-            <Link to="projects" {...linkSettings}>
-              Projects
-            </Link>
-            <Link to="socialMedia" {...linkSettings}>
-              Contacts
-            </Link>
-          </Nav>
+              <Link to="skills" {...linkSettings}>
+                {t("Skills")}
+              </Link>
+              <Link to="projects" {...linkSettings}>
+                {t("Projects")}
+              </Link>
+              <Link to="socialMedia" {...linkSettings}>
+                {t("Contacts")}
+              </Link>
+            </Nav>
+            <LanguageButtons />
+          </>
         )}
       </StyledHeader>
     </>

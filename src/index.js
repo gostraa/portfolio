@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { App } from "components/App";
 import "./index.css";
-// import "./i18n";
+import "./i18n";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();

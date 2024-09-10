@@ -8,19 +8,24 @@ export const Typing = styled(TypingSvg)`
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-    width: 522px;
-    height: 476px;
+    width: 422px;
+    height: 376px;
     margin-bottom: 32px;
   }
   @media screen and (min-width: 1024px) {
     width: 482px;
     height: 426px;
   }
+  @media screen and (min-width: 1440px) {
+    width: 582px;
+    height: 526px;
+  }
 `;
 
 export const Wrapper = styled.div`
   position: relative;
 `;
+
 export const StyledSnake = styled(Snake)`
   display: none;
 
@@ -49,16 +54,19 @@ export const StyledHeroWrapper = styled.section`
 
   @media screen and (min-width: 1024px) {
     flex-direction: row-reverse;
+    justify-content: space-between;
     padding: 180px 44px 50px 44px;
-    gap: 54px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 150px 44px 50px 44px;
   }
 `;
 
 export const StyledTitle = styled.h1`
-  font-family: Kalam, sans-serif;
+  font-family: Kalam, Caveat;
   font-size: 40px;
   line-height: 1.4;
-  max-width: 280px;
   background: linear-gradient(90deg, #9955e8 0%, #7bffaf 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -67,11 +75,14 @@ export const StyledTitle = styled.h1`
   @media screen and (min-width: 1024px) {
     font-size: 38px;
   }
+  @media screen and (min-width: 1440px) {
+    font-size: 42px;
+  }
 `;
 
 export const StyledI = styled.p`
   color: var(--text-primary);
-  font-family: Heebo, sans-serif;
+  font-family: Heebo, Manrope;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.33;
@@ -79,11 +90,14 @@ export const StyledI = styled.p`
   @media screen and (min-width: 1024px) {
     font-size: 24px;
   }
+  @media screen and (min-width: 1440px) {
+    font-size: 28px;
+  }
 `;
 
 export const StyledAbout = styled.p`
   color: var(--text-secondary);
-  font-family: Heebo, sans-serif;
+  font-family: Heebo, Manrope;
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -91,6 +105,11 @@ export const StyledAbout = styled.p`
 
   @media screen and (min-width: 1024px) {
     font-size: 20px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
+    margin-bottom: 80px;
   }
 `;
 
@@ -102,18 +121,16 @@ export const LinksWrapper = styled.div`
 export const StyledScrollDown = styled.p`
   color: #7dffaf;
   text-align: center;
-  font-family: Kalam, sans-serif;
+  font-family: Kalam, Caveat;
   font-size: 16px;
-  width: 300px;
+
   margin: 0 auto;
   padding: 50px 10px;
   @media screen and (min-width: 768px) {
-    width: 400px;
     font-size: 22px;
   }
 
   @media screen and (min-width: 1024px) {
-    width: 450px;
     font-size: 24px;
   }
 `;

@@ -11,14 +11,15 @@ export const useGSAPAnimations = (hint) => {
       ".snake-line",
       { opacity: 0 },
       {
-        strokeDasharray: "2600",
-        strokeDashoffset: "2600",
+        strokeDasharray: "3000",
+        strokeDashoffset: "3000",
         opacity: 1,
         duration: 10,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: hint.current,
-          start: "top 65%",
+          trigger: ".snake-line",
+          start: "top 55%",
+          end: "top 0%",
           scrub: true,
         },
       }
