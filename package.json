@@ -4,11 +4,13 @@
   "private": true,
   "homepage": "https://gostraa.github.io/portfolio/",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.1",
     "@tanstack/react-query": "^5.51.24",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.7",
     "framer-motion": "^10.16.5",
     "i18next": "^23.7.9",
     "i18next-browser-languagedetector": "^7.2.0",

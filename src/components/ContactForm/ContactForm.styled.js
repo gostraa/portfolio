@@ -17,7 +17,7 @@ export const FormWrapper = styled.form`
 
 export const Input = styled.input`
   padding: 16px;
-  border: 1px solid transparent;
+  border: 1px solid ${(props) => (props.error ? "red" : "transparent")};
   border-radius: 8px;
   background-color: black;
   color: #fff;
@@ -25,7 +25,7 @@ export const Input = styled.input`
   outline: none;
 
   &:focus {
-    border-color: #4ade80;
+    border-color: ${(props) => (props.error ? "red" : "#4ade80")};
   }
 
   @media screen and (min-width: 1024px) {
@@ -35,7 +35,7 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   padding: 16px;
-  border: 1px solid transparent;
+  border: 1px solid ${(props) => (props.error ? "red" : "transparent")};
   border-radius: 8px;
   background-color: black;
   color: #fff;
@@ -45,7 +45,7 @@ export const TextArea = styled.textarea`
   height: 150px;
 
   &:focus {
-    border-color: #4ade80;
+    border-color: ${(props) => (props.error ? "red" : "#4ade80")};
   }
 
   @media screen and (min-width: 1024px) {
@@ -82,7 +82,21 @@ export const Button = styled.button`
   }
 `;
 
-export const ErrorMessage = styled.p`
-  color: #f87171;
-  font-size: 0.875rem;
+export const Message = styled.p`
+  display: none;
+  height: 58px;
+  position: relative;
+  opacity: 0;
+  left: -100%;
+  color: #4ade80;
+  font-size: 14px;
+  font-family: Kalam, Manrope;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+`;
+
+export const Flex = styled.div`
+  display: flex;
 `;

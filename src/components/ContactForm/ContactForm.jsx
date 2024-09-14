@@ -1,35 +1,52 @@
 import { useForm } from "react-hook-form";
 import {
   Button,
-  ErrorMessage,
+  Flex,
   FormWrapper,
   Input,
+  Message,
   TextArea,
 } from "./ContactForm.styled";
+import { sendMailLetter } from "helpers/sendEmail";
+import { useRef } from "react";
+import { animateCheckmark } from "hooks/contactForm/useGSAPAnimation";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const form = useRef();
+  const message = useRef();
+  const submitButton = useRef();
+
+  const onSubmit = async () => {
+    const response = await sendMailLetter(form.current);
+
+    if (response.message === "success") {
+      animateCheckmark(message, submitButton);
+      reset();
+    }
   };
 
   return (
-    <FormWrapper onSubmit={handleSubmit(onSubmit)}>
+    <FormWrapper ref={form} onSubmit={handleSubmit(onSubmit)}>
       <Input
         type="text"
-        placeholder="Name"
+        placeholder={t("Name")}
         {...register("name", { required: "Name is required" })}
+        error={errors.name}
       />
-      {errors.name && <ErrorMessage>{errors.name.message}</ErrorMessage>}
 
       <Input
         type="email"
-        placeholder="E-mail"
+        placeholder={t("E-mail")}
         {...register("email", {
           required: "Email is required",
           pattern: {
@@ -37,18 +54,26 @@ const ContactForm = () => {
             message: "Enter a valid email",
           },
         })}
+        error={errors.email}
       />
-      {errors.email && <ErrorMessage>{errors.email.message}</ErrorMessage>}
 
       <TextArea
-        placeholder="Your message"
+        placeholder={t("Your message")}
         {...register("message", { required: "Message is required" })}
+        error={errors.message}
       />
-      {errors.message && <ErrorMessage>{errors.message.message}</ErrorMessage>}
 
-      <Button type="submit">
-        Send me a message <span>→</span>
-      </Button>
+      <Flex>
+        <Message ref={message}>
+          {t(
+            "Thank you for the opportunity!🌟 I’m excited about the idea of collaborating and would love to discuss it further!💬🤗"
+          )}
+        </Message>
+        <Button ref={submitButton} type="submit">
+          {t("Send me a message")}
+          <span>→</span>
+        </Button>
+      </Flex>
     </FormWrapper>
   );
 };
