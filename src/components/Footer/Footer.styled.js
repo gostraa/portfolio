@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as Avatar } from "../../svg/CuteAvatar.svg";
 
 export const MyAvatar = styled(Avatar)`
+  margin-bottom: 10px;
   width: 160px;
   height: 160px;
 
@@ -25,13 +26,16 @@ export const FooterSection = styled.section`
 export const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 16px;
   background: var(--surface-primary);
-  padding: 48px 28px;
+  padding: 48px 34px;
   border-radius: 28px;
+  @media screen and (min-width: 768px) {
+    gap: 48px;
+  }
   @media screen and (min-width: 1024px) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 `;
@@ -41,9 +45,9 @@ export const TitleFooter = styled.h2`
   font-family: Kalam, Caveat;
   font-size: 18px;
   line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   @media screen and (min-width: 1024px) {
-    font-size: 22px;
+    font-size: 18px;
   }
 `;
 
@@ -53,9 +57,9 @@ export const Primary = styled.p`
   font-size: 24px;
   font-weight: 500;
   line-height: 1.33;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   @media screen and (min-width: 1024px) {
-    font-size: 28px;
+    font-size: 20px;
   }
 `;
 
@@ -64,33 +68,17 @@ export const Secondary = styled.p`
   font-family: Heebo, Manrope;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 14px;
-
-  & a {
-    color: #7dffaf;
-    font-size: 16px;
-    line-height: 1.5;
-    text-decoration-line: underline;
-    margin: 0 8px;
-  }
+  margin-bottom: 10px;
 
   @media screen and (min-width: 1024px) {
-    font-size: 20px;
-    margin-bottom: 18px;
-
-    & a {
-      color: #7dffaf;
-      font-size: 20px;
-      line-height: 1.5;
-      text-decoration-line: underline;
-      margin: 0 8px;
-    }
+    font-size: 16px;
+    margin-bottom: 14px;
   }
 `;
 
 export const SocialList = styled.ul`
   display: flex;
-  gap: 10px;
+  gap: 12px;
 `;
 
 export const SocialLink = styled.a`
