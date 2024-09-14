@@ -119,7 +119,7 @@ export const StyledGeneralP = styled.p`
 export const StyledSecondaryP = styled.p`
   color: var(--text-secondary);
   font-family: Heebo, Manrope;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 32px;
   @media screen and (min-width: 1024px) {
