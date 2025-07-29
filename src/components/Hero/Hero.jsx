@@ -34,7 +34,7 @@ const Hero = () => {
           <StyledAbout>
             {t("I specialize in building web applications")}
             {t(
-              "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js"
+              "using JavaScript, React, Next.js and Angular"
             )}
           </StyledAbout>
           <LinksWrapper>

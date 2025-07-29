@@ -5,8 +5,8 @@
   "Contacts": "Contacts",
   "greetings": "Hi, I'm Mariia",
   "Front-end developer": "Front-end developer",
-  "I specialize in building web applications": "I specialize in building web applications, ",
-  "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js": "using technologies such as HTML, CSS, JavaScript, React, Next.js and Node.js",
+  "I specialize in building web applications": "I specialize in building web applications ",
+  "using JavaScript, React, Next.js and Angular": "using JavaScript, React, Next.js and Angular",
   "Download CV": "Download CV",
   "hint": "SCROLL DOWN TO FIND OUT MORE",
 
@@ -58,5 +58,6 @@
     "I worked on": "I worked on",
     "Take a look at this project": "Take a look at this project",
     "Open Live Page": "Open Live Page"
-  }
+  },
+   "Failed to load projects": "Failed to load projects :("
 }
