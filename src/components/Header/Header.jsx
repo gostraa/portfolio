@@ -1,32 +1,32 @@
-import { useMediaQuery } from "react-responsive";
-import { Link } from "react-scroll";
-import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-scroll';
+import { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
-import NavigationMenu from "components/NavigationMenu/NavigationMenu";
-import { Nav } from "components/NavigationMenu/NavigationMenu.styled";
-import { BurgerSvg, StyledHeader } from "./Header.styled";
+import NavigationMenu from 'components/NavigationMenu/NavigationMenu';
+import { Nav } from 'components/NavigationMenu/NavigationMenu.styled';
+import { BurgerSvg, StyledHeader } from './Header.styled';
 
-import { linkSettings } from "constants/constants";
-import LanguageButtons from "components/languageButtons/LanguageButtons";
-import { useTranslation } from "react-i18next";
+import { linkSettings } from 'constants/constants';
+import LanguageButtons from 'components/languageButtons/LanguageButtons';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isDesktop = useMediaQuery({
-    query: "(min-width: 1024px)",
+    query: '(min-width: 1024px)',
   });
 
   const toggleNav = () => {
-    setIsOpenMenu((isOpen) => !isOpen);
+    setIsMenuOpen((isOpen) => !isOpen);
   };
   const { t } = useTranslation();
 
   return (
     <>
       <AnimatePresence>
-        {isOpenMenu && <NavigationMenu toggleNav={toggleNav} />}
+        {isMenuOpen && <NavigationMenu toggleNav={toggleNav} />}
       </AnimatePresence>
 
       <StyledHeader>
@@ -36,17 +36,17 @@ const Header = () => {
           <>
             <Nav>
               <Link to="about" {...linkSettings}>
-                {t("About")}
+                {t('About')}
               </Link>
 
               <Link to="skills" {...linkSettings}>
-                {t("Skills")}
+                {t('Skills')}
               </Link>
               <Link to="projects" {...linkSettings}>
-                {t("Projects")}
+                {t('Projects')}
               </Link>
               <Link to="socialMedia" {...linkSettings}>
-                {t("Contacts")}
+                {t('Contacts')}
               </Link>
             </Nav>
             <LanguageButtons />

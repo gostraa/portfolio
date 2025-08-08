@@ -1,5 +1,5 @@
-import { useGSAPAnimations } from "hooks/hero/useGSAPAnimations";
-import { ReactComponent as CVSvg } from "../../svg/ReadCvLogo.svg";
+import { useGSAPAnimations } from 'hooks/hero/useGSAPAnimations';
+import { ReactComponent as CVSvg } from '../../svg/ReadCvLogo.svg';
 
 import {
   Background,
@@ -12,16 +12,16 @@ import {
   StyledTitle,
   Typing,
   Wrapper,
-} from "./Hero.styled";
+} from './Hero.styled';
 
-import Button from "components/Button/Button";
+import Button from 'components/Button/Button';
 
-import { useRef } from "react";
-import { useTranslation } from "react-i18next";
+import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
-  const hint = useRef();
-  useGSAPAnimations(hint);
+  const hintRef = useRef();
+  useGSAPAnimations(hintRef);
   const { t } = useTranslation();
 
   return (
@@ -29,16 +29,14 @@ const Hero = () => {
       <StyledHeroWrapper>
         <Typing />
         <div>
-          <StyledTitle>{t("greetings")}</StyledTitle>
-          <StyledI>{t("Front-end developer")}</StyledI>
+          <StyledTitle>{t('greetings')}</StyledTitle>
+          <StyledI>{t('Front-end developer')}</StyledI>
           <StyledAbout>
-            {t("I specialize in building web applications")}
-            {t(
-              "using JavaScript, React, Next.js and Angular"
-            )}
+            {t('I specialize in building web applications')}
+            {t('using JavaScript, React, Next.js and Angular')}
           </StyledAbout>
           <LinksWrapper>
-            <Button type="primary" text={"Download CV"}>
+            <Button type="primary" text={'Download CV'}>
               <CVSvg />
             </Button>
           </LinksWrapper>
@@ -46,7 +44,7 @@ const Hero = () => {
       </StyledHeroWrapper>
 
       <Wrapper>
-        <StyledScrollDown ref={hint}>{t("hint")}</StyledScrollDown>
+        <StyledScrollDown ref={hintRef}>{t('hint')}</StyledScrollDown>
         <StyledSnake />
       </Wrapper>
     </Background>

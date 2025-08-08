@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
-import { ReactComponent as GitHub } from "../../svg/logo-github.svg";
-import { ReactComponent as Linkedin } from "../../svg/logo-linkedin.svg";
-import { ReactComponent as Instagram } from "../../svg/logo-instagram.svg";
-import { ReactComponent as Telegram } from "../../svg/telegram-svgrepo-com.svg";
+import { motion } from 'framer-motion';
+import { ReactComponent as GitHub } from '../../svg/logo-github.svg';
+import { ReactComponent as Linkedin } from '../../svg/logo-linkedin.svg';
+import { ReactComponent as Instagram } from '../../svg/logo-instagram.svg';
+import { ReactComponent as Telegram } from '../../svg/telegram-svgrepo-com.svg';
 
 import {
   FooterContainer,
@@ -13,10 +13,10 @@ import {
   SocialLink,
   SocialList,
   TitleFooter,
-} from "./Footer.styled";
-import { animationSettingsFooter } from "constants/constants";
-import { useTranslation } from "react-i18next";
-import ContactForm from "components/ContactForm/ContactForm";
+} from './Footer.styled';
+import { animationSettingsFooter } from 'constants/constants';
+import { useTranslation } from 'react-i18next';
+import ContactForm from 'components/ContactForm/ContactForm';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -28,16 +28,16 @@ const Footer = () => {
           <motion.div {...animationSettingsFooter}>
             <MyAvatar />
           </motion.div>
-          <TitleFooter>{t("Contacts")}</TitleFooter>
-          <Primary>{t("Enjoyed my work?")}</Primary>
+          <TitleFooter>{t('Contacts')}</TitleFooter>
+          <Primary>{t('Enjoyed my work?')}</Primary>
           <Secondary>
-            {t("I’m always up for a chat")}{" "}
-            {t("or give me a shout on social media")}
+            {t('I’m always up for a chat')}{' '}
+            {t('or give me a shout on social media')}
           </Secondary>
           <SocialList>
             <li>
               <SocialLink
-                href="https://t.me/gosstra"
+                href="https://t.me/halfway_sunny"
                 target="_blank"
                 rel="noopener noreferrer"
               >

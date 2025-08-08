@@ -22,19 +22,18 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const form = useRef();
-  const message = useRef();
-  const submitButton = useRef();
+  const formRef = useRef();
+  const messageRef = useRef();
+  const submitButtonRef = useRef();
   const [errorMsg, setErrorMsg] = useState('');
 
   const onSubmit = async () => {
-    console.log('Form submitted:', form.current);
     setErrorMsg('');
     try {
-      const response = await sendMailLetter(form.current);
+      const response = await sendMailLetter(formRef.current);
 
       if (response.message === 'success') {
-        animateCheckmark(message, submitButton);
+        animateCheckmark(messageRef, submitButtonRef);
         reset();
       } else {
         setErrorMsg(t('Something went wrong. Please try again later.'));
@@ -49,7 +48,7 @@ const ContactForm = () => {
   };
 
   return (
-    <FormWrapper ref={form} onSubmit={handleSubmit(onSubmit)}>
+    <FormWrapper ref={formRef} onSubmit={handleSubmit(onSubmit)}>
       <Input
         type="text"
         placeholder={t('Name')}
@@ -77,12 +76,12 @@ const ContactForm = () => {
       />
 
       <Flex>
-        <Message ref={message}>
+        <Message ref={messageRef}>
           {t(
             'Thank you for the opportunity!🌟 I’m excited about the idea of collaborating and would love to discuss it further!💬🤗',
           )}
         </Message>
-        <Button ref={submitButton} type="submit">
+        <Button ref={submitButtonRef} type="submit">
           {t('Send me a message')}
           <span>→</span>
         </Button>

@@ -27,25 +27,25 @@ import { useGSAPAnimations } from 'hooks/aboutMe/useGSAPAnimation';
 import { useTranslation } from 'react-i18next';
 
 const AboutMe = () => {
-  const container = useRef();
-  const arrow = useRef();
-  const svgContainer = useRef();
+  const wrapperRef = useRef();
+  const arrowSvgRef = useRef();
+  const svgContainerRef = useRef();
 
   const { t } = useTranslation();
 
-  useGSAPAnimations(container, arrow, svgContainer);
+  useGSAPAnimations(wrapperRef, arrowSvgRef, svgContainerRef);
 
   return (
-    <div ref={container}>
+    <div ref={wrapperRef}>
       <StyledAboutSection id="about" className="section">
         <ArrowWrapper>
-          <ArrowSvg className="arrow" ref={arrow} />
+          <ArrowSvg className="arrow" ref={arrowSvgRef} />
         </ArrowWrapper>
 
         <StyledAboutWrapper>
           <Girl />
           <InfoWrapAbout>
-            <SvgWrapper ref={svgContainer} style={{ opacity: 0 }}>
+            <SvgWrapper ref={svgContainerRef} style={{ opacity: 0 }}>
               <HTMLSvg className="svg" />
               <CSSSvg className="svg" />
               <JSSvg className="svg" />
