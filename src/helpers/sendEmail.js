@@ -1,4 +1,4 @@
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
 
 export const sendMailLetter = async (data) => {
   const serviceId = process.env.REACT_APP_SERVICE_ID;
@@ -11,11 +11,11 @@ export const sendMailLetter = async (data) => {
     });
 
     if (response.status === 200) {
-      return { message: "success" };
+      return { message: 'success' };
     } else {
-      return { message: "failed", status: response.status };
+      return { message: 'failed', status: response.status };
     }
   } catch (error) {
-    return { message: "error", error: error.message };
+    return { message: 'error', error: error.message };
   }
 };

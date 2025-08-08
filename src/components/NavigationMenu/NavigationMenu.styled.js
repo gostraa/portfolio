@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 export const Backdrop = styled(motion.div)`
   position: fixed;
   top: 0;
@@ -23,6 +23,7 @@ export const Menu = styled(motion.div)`
   top: 24px;
   right: 24px;
   width: 60%;
+  min-height: fit-content;
   height: 40%;
   border-radius: 24px;
   z-index: 999;
