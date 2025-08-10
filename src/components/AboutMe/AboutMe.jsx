@@ -64,11 +64,7 @@ const AboutMe = () => {
                 'where I apply my skills and expertise to drive impactful solutions in commercial development',
               )}
             </StyledGeneralP>
-            <StyledSecondaryP>
-              {t(
-                'My passion for programming is in harmony with my love for music, as well as my self-taught guitar skills. I value the ability to dive into studies for entire days, losing track of time',
-              )}
-            </StyledSecondaryP>
+            <StyledSecondaryP>{t('ABOUT')}</StyledSecondaryP>
             <Button type="primary" text="Download CV">
               <CVSvg />
             </Button>
