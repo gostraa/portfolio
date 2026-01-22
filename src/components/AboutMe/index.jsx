@@ -7,7 +7,7 @@ import { ReactComponent as CVSvg } from '../../svg/ReadCvLogo.svg';
 import { ReactComponent as ArrowSvg } from '../../svg/Graphic3.svg';
 import { ReactComponent as AngularSvg } from '../../svg/icons8-angularjs.svg';
 
-import Button from 'components/Button/Button';
+import Button from 'components/Button';
 
 import {
   ArrowWrapper,

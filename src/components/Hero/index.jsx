@@ -14,7 +14,7 @@ import {
   Wrapper,
 } from './Hero.styled';
 
-import Button from 'components/Button/Button';
+import Button from 'components/Button';
 
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';

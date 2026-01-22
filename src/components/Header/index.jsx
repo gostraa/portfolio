@@ -3,12 +3,11 @@ import { Link } from 'react-scroll';
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
-import NavigationMenu from 'components/NavigationMenu/NavigationMenu';
+import NavigationMenu from 'components/NavigationMenu';
 import { Nav } from 'components/NavigationMenu/NavigationMenu.styled';
 import { BurgerSvg, StyledHeader } from './Header.styled';
 
-import { linkSettings } from 'constants/constants';
-import LanguageButtons from 'components/languageButtons/LanguageButtons';
+import { linkSettings, navLinks } from 'constants/constants';
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
@@ -35,21 +34,14 @@ const Header = () => {
         ) : (
           <>
             <Nav>
-              <Link to="about" {...linkSettings}>
-                {t('About')}
-              </Link>
-
-              <Link to="skills" {...linkSettings}>
-                {t('Skills')}
-              </Link>
-              <Link to="projects" {...linkSettings}>
-                {t('Projects')}
-              </Link>
-              <Link to="socialMedia" {...linkSettings}>
-                {t('Contacts')}
-              </Link>
+              {navLinks.map((link) => (
+                <Link key={link.to} to={link.to} {...linkSettings}>
+                  {t(link.label)}
+                </Link>
+              ))}
             </Nav>
-            <LanguageButtons />
+
+            {/* <LanguageButtons /> */}
           </>
         )}
       </StyledHeader>

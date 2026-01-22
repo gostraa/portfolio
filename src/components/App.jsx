@@ -1,14 +1,15 @@
-import React, { Suspense } from "react";
-import Header from "./Header/Header";
-import Hero from "./Hero/Hero";
-import AboutMe from "./AboutMe/AboutMe";
-import MyProjects from "./MyProjects/MyProjects";
-import Skills from "./Skills/Skills";
-import Footer from "./Footer/Footer";
+import React, { Suspense } from 'react';
+import Header from './Header';
+import Hero from './Hero';
+import AboutMe from './AboutMe';
+import MyProjects from './MyProjects';
+import Skills from './Skills';
+import Footer from './Footer';
+import WorkExperience from './WorkExperience';
 
 export const App = () => {
   return (
-    <Suspense fallback={"...loading"}>
+    <Suspense fallback={'...loading'}>
       <header>
         <Header />
       </header>
@@ -17,6 +18,7 @@ export const App = () => {
         <AboutMe />
         <Skills />
         <MyProjects />
+        <WorkExperience />
       </main>
       <footer>
         <Footer />

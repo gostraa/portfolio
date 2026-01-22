@@ -16,7 +16,7 @@ import {
 } from './Footer.styled';
 import { animationSettingsFooter } from 'constants/constants';
 import { useTranslation } from 'react-i18next';
-import ContactForm from 'components/ContactForm/ContactForm';
+import ContactForm from 'components/ContactForm';
 
 const Footer = () => {
   const { t } = useTranslation();
