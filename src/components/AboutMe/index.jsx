@@ -13,7 +13,6 @@ import {
   ArrowWrapper,
   Girl,
   InfoWrapAbout,
-  LinkLeo,
   StyledAboutSection,
   StyledAboutTitle,
   StyledAboutWrapper,

@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { ReactComponent as DevGrlSvg } from "../../svg/devGirl.svg";
+import { ReactComponent as DevGrlSvg } from '../../svg/devGirl.svg';
 
 export const Girl = styled(DevGrlSvg)`
   width: 312px;
@@ -14,11 +14,6 @@ export const Girl = styled(DevGrlSvg)`
     min-width: 452px;
     min-height: 402px;
   }
-`;
-
-export const LinkLeo = styled.a`
-  color: #7dffaf;
-  text-decoration: underline;
 `;
 
 export const StyledAboutSection = styled.section`
