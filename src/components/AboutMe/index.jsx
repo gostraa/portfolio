@@ -56,15 +56,15 @@ const AboutMe = () => {
 
             <StyledAboutTitle>{t('About')}</StyledAboutTitle>
             <StyledGeneralP>
-              {t('Currently, I am collaborating with')}{' '}
-              <LinkLeo href="https://www.upwork.com/agencies/leosource/">
-                Leo•Source
-              </LinkLeo>{' '}
-              {t(
-                'where I apply my skills and expertise to drive impactful solutions in commercial development',
-              )}
+              Frontend developer experienced in React, TypeScript, Next.js,
+              Angular, and browser extensions. Passionate about building
+              user-friendly interfaces and exploring new technologies.
             </StyledGeneralP>
-            <StyledSecondaryP>{t('ABOUT')}</StyledSecondaryP>
+            <StyledSecondaryP>
+              In my free time, I enjoy playing guitar and singing, traveling,
+              and spending time outdoors — activities that help me stay balanced
+              and inspired.
+            </StyledSecondaryP>
             <Button type="primary" text="Download CV">
               <CVSvg />
             </Button>
