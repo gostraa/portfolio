@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { ReactComponent as Avatar } from "../../svg/CuteAvatar.svg";
+import styled from 'styled-components';
+import { ReactComponent as Avatar } from '../../svg/CuteAvatar.svg';
 
 export const MyAvatar = styled(Avatar)`
   margin-bottom: 10px;
@@ -20,7 +20,7 @@ export const MyAvatar = styled(Avatar)`
 export const FooterSection = styled.section`
   max-width: 1440px;
   margin: 0 auto;
-  padding: 90px 24px 50px 24px;
+  padding: 50px 24px 50px 24px;
 `;
 
 export const FooterContainer = styled.div`
@@ -85,7 +85,7 @@ export const SocialLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  padding: 11px;
   border-radius: 8px;
   background: var(--surface-secondary);
   &:hover {

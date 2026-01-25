@@ -6,6 +6,10 @@ import englishImg from '../images/projects/english.jpg';
 import waterImg from '../images/projects/water_tracker.jpg';
 import manicuristImg from '../images/projects/manicurist.jpg';
 import sportingImg from '../images/projects/sporting.jpg';
+import { ReactComponent as Telegram } from '../svg/telegram-svgrepo-com.svg';
+import { ReactComponent as GitHub } from '../svg/logo-github.svg';
+import { ReactComponent as Linkedin } from '../svg/logo-linkedin.svg';
+import { ReactComponent as Instagram } from '../svg/logo-instagram.svg';
 
 //footer
 
@@ -26,6 +30,29 @@ export const animationSettingsFooter = {
   initial: 'initial',
   viewport: { once: false },
 };
+
+export const socialLinks = [
+  {
+    id: 'telegram',
+    href: 'https://t.me/halfway_sunny',
+    Icon: Telegram,
+  },
+  {
+    id: 'github',
+    href: 'https://github.com/gostraa',
+    Icon: GitHub,
+  },
+  {
+    id: 'linkedin',
+    href: 'https://www.linkedin.com/in/mariia-cherkashynaa/',
+    Icon: Linkedin,
+  },
+  {
+    id: 'instagram',
+    href: 'https://www.instagram.com/_gostraa_/?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr',
+    Icon: Instagram,
+  },
+];
 
 //skils list
 

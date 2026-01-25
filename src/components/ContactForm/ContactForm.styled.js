@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FormWrapper = styled.form`
   display: flex;
@@ -17,7 +17,7 @@ export const FormWrapper = styled.form`
 
 export const Input = styled.input`
   padding: 16px;
-  border: 1px solid ${(props) => (props.error ? "red" : "transparent")};
+  border: 1px solid ${(props) => (props.error ? 'red' : 'transparent')};
   border-radius: 8px;
   background-color: black;
   color: #fff;
@@ -25,7 +25,7 @@ export const Input = styled.input`
   outline: none;
 
   &:focus {
-    border-color: ${(props) => (props.error ? "red" : "#4ade80")};
+    border-color: ${(props) => (props.error ? 'red' : '#4ade80')};
   }
 
   @media screen and (min-width: 1024px) {
@@ -35,7 +35,7 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   padding: 16px;
-  border: 1px solid ${(props) => (props.error ? "red" : "transparent")};
+  border: 1px solid ${(props) => (props.error ? 'red' : 'transparent')};
   border-radius: 8px;
   background-color: black;
   color: #fff;
@@ -45,7 +45,7 @@ export const TextArea = styled.textarea`
   height: 150px;
 
   &:focus {
-    border-color: ${(props) => (props.error ? "red" : "#4ade80")};
+    border-color: ${(props) => (props.error ? 'red' : '#4ade80')};
   }
 
   @media screen and (min-width: 1024px) {
@@ -95,6 +95,14 @@ export const Message = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 18px;
   }
+`;
+
+export const ErrorMessage = styled.p`
+  color: #ce2c2c;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%;
 `;
 
 export const Flex = styled.div`

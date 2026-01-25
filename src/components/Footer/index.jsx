@@ -1,9 +1,4 @@
 import { motion } from 'framer-motion';
-import { ReactComponent as GitHub } from '../../svg/logo-github.svg';
-import { ReactComponent as Linkedin } from '../../svg/logo-linkedin.svg';
-import { ReactComponent as Instagram } from '../../svg/logo-instagram.svg';
-import { ReactComponent as Telegram } from '../../svg/telegram-svgrepo-com.svg';
-
 import {
   FooterContainer,
   FooterSection,
@@ -14,7 +9,7 @@ import {
   SocialList,
   TitleFooter,
 } from './Footer.styled';
-import { animationSettingsFooter } from 'constants/constants';
+import { animationSettingsFooter, socialLinks } from 'constants/constants';
 import { useTranslation } from 'react-i18next';
 import ContactForm from 'components/ContactForm';
 
@@ -35,42 +30,17 @@ const Footer = () => {
             {t('or give me a shout on social media')}
           </Secondary>
           <SocialList>
-            <li>
-              <SocialLink
-                href="https://t.me/halfway_sunny"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Telegram />
-              </SocialLink>
-            </li>
-            <li>
-              <SocialLink
-                href="https://github.com/gostraa"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GitHub />
-              </SocialLink>
-            </li>
-            <li>
-              <SocialLink
-                href="https://www.linkedin.com/in/mariia-cherkashynaa/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin />
-              </SocialLink>
-            </li>
-            <li>
-              <SocialLink
-                href="https://www.instagram.com/_gostraa_/?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Instagram />
-              </SocialLink>
-            </li>
+            {socialLinks.map(({ id, href, Icon }) => (
+              <li key={id}>
+                <SocialLink
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon />
+                </SocialLink>
+              </li>
+            ))}
           </SocialList>
         </div>
         <ContactForm />

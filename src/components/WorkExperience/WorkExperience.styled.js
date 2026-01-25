@@ -52,7 +52,7 @@ export const Company = styled.div`
   flex-direction: column;
   align-items: center;
   min-width: 40%;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 
   h2 {
     font-family: Heebo, Manrope;
@@ -63,10 +63,6 @@ export const Company = styled.div`
 
   p {
     font-size: 16px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
   }
 `;
 

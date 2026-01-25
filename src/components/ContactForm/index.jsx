@@ -1,13 +1,14 @@
 import { useForm } from 'react-hook-form';
 import {
   Button,
+  ErrorMessage,
   Flex,
   FormWrapper,
   Input,
   Message,
   TextArea,
 } from './ContactForm.styled';
-import { sendMailLetter } from 'helpers/sendEmail';
+import { sendEmail } from 'helpers/sendEmail';
 import { useRef, useState } from 'react';
 import { animateCheckmark } from 'hooks/contactForm/useGSAPAnimation';
 import { useTranslation } from 'react-i18next';
@@ -22,33 +23,24 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const formRef = useRef();
   const messageRef = useRef();
   const submitButtonRef = useRef();
   const [errorMsg, setErrorMsg] = useState('');
 
-  const onSubmit = async () => {
-    setErrorMsg('');
+  const onSubmit = async (data) => {
     try {
-      const response = await sendMailLetter(formRef.current);
-
-      if (response.message === 'success') {
-        animateCheckmark(messageRef, submitButtonRef);
-        reset();
-      } else {
-        setErrorMsg(t('Something went wrong. Please try again later.'));
-      }
+      setErrorMsg('');
+      await sendEmail(data);
+      animateCheckmark(messageRef, submitButtonRef);
+      reset();
     } catch (error) {
-      setErrorMsg(
-        t(
-          'Failed to send message. Please check your connection and try again.',
-        ),
-      );
+      console.log(error);
+      setErrorMsg(t('Something went wrong. Please try again later.'));
     }
   };
 
   return (
-    <FormWrapper ref={formRef} onSubmit={handleSubmit(onSubmit)}>
+    <FormWrapper onSubmit={handleSubmit(onSubmit)}>
       <Input
         type="text"
         placeholder={t('Name')}
@@ -86,19 +78,7 @@ const ContactForm = () => {
           <span>→</span>
         </Button>
       </Flex>
-      {errorMsg && (
-        <div
-          style={{
-            color: '#ce2c2c',
-            marginTop: '1rem',
-            textAlign: 'center',
-            fontSize: '1.2rem',
-            width: '100%',
-          }}
-        >
-          {t(errorMsg)}
-        </div>
-      )}
+      {errorMsg && <ErrorMessage>{t(errorMsg)}</ErrorMessage>}
     </FormWrapper>
   );
 };
